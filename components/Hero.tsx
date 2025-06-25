@@ -28,7 +28,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-xl text-dark-300 mb-8 max-w-3xl mx-auto leading-relaxed fade-in-up-delay-2">
-            Root News cuts through information overload with AI-powered summaries from trusted sources. Get up to speed on 10+ categories in minutes, not hours.
+            Root News cuts through information overload with AI-powered summaries from trusted sources. Get up to speed in minutes, not hours.
           </p>
 
           {/* CTA Buttons */}
