@@ -28,9 +28,9 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-4">2. Information We Collect</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">2. Information We Collect</h2>
               
-              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.1 Account Information</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.1 Account Information</h3>
               <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>Anonymous Accounts</strong>: We create temporary anonymous accounts during onboarding to provide immediate access to our service</li>
                 <li><strong>Email and Password</strong>: If you choose to create a permanent account or upgrade from anonymous</li>
@@ -38,7 +38,7 @@ export default function Privacy() {
                 <li><strong>Display Name</strong>: User-provided name for account personalization</li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.2 Usage Information</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.2 Usage Information</h3>
               <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>News Preferences</strong>: Categories you mark as favorites</li>
                 <li><strong>Notification Settings</strong>: Your daily reminder preferences and timing</li>
@@ -46,7 +46,7 @@ export default function Privacy() {
                 <li><strong>App Usage</strong>: Basic app functionality usage for service improvement</li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.3 Device Information</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.3 Device Information</h3>
               <ul className="list-disc list-inside space-y-2 text-sm">
                 <li><strong>Device Type</strong>: To optimize app performance</li>
                 <li><strong>Push Notification Tokens</strong>: To deliver daily news reminders (only if enabled)</li>
@@ -55,130 +55,99 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-4">3. How We Use Your Information</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">3. How We Use Your Information</h2>
+              <p className="mb-3 text-sm">We use your information to:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>Provide Service</strong>: Deliver personalized news content and maintain your account</li>
+                <li><strong>Process Payments</strong>: Handle subscription billing through Apple App Store</li>
+                <li><strong>Send Notifications</strong>: Deliver daily news summaries and app updates (with your consent)</li>
+                <li><strong>Improve Service</strong>: Analyze usage patterns to enhance user experience</li>
+                <li><strong>Customer Support</strong>: Respond to your inquiries and resolve issues</li>
+                <li><strong>Legal Compliance</strong>: Meet legal obligations and protect our rights</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Information Sharing and Disclosure</h2>
+              <p className="mb-3 text-sm">We do not sell, trade, or rent your personal information. We may share information only in these limited circumstances:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>Apple App Store</strong>: Subscription and payment processing</li>
+                <li><strong>Service Providers</strong>: Trusted third parties who assist in service delivery (under strict confidentiality agreements)</li>
+                <li><strong>Legal Requirements</strong>: When required by law, court order, or to protect our rights</li>
+                <li><strong>Business Transfers</strong>: In connection with a merger, acquisition, or sale of assets (with user notification)</li>
+                <li><strong>Consent</strong>: When you explicitly agree to sharing</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Data Storage and Security</h2>
               
-              <h3 className="text-lg font-semibold text-primary-300 mb-3">3.1 Service Provision</h3>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">5.1 Data Storage</h3>
               <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li>Create and manage your account (anonymous or permanent)</li>
-                <li>Provide personalized news summaries using AI technology</li>
-                <li>Deliver content based on your selected favorite categories</li>
-                <li>Process subscription payments through Apple's payment system</li>
+                <li><strong>Location</strong>: Data stored on secure servers in the United States</li>
+                <li><strong>Duration</strong>: Account data retained while account is active</li>
+                <li><strong>Deletion</strong>: Data deleted within 30 days of account deletion request</li>
+                <li><strong>Anonymous Accounts</strong>: Automatically deleted after 30 days of inactivity</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">3.2 Communication</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li>Send daily news reminder notifications (only if enabled by you)</li>
-                <li>Provide customer support and respond to inquiries</li>
-                <li>Send important service updates or changes</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">3.3 Service Improvement</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Analyze usage patterns to improve app functionality</li>
-                <li>Optimize AI-powered news summarization</li>
-                <li>Enhance user experience and app performance</li>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">5.2 Security Measures</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li>Industry-standard encryption for data transmission and storage</li>
+                <li>Regular security audits and updates</li>
+                <li>Limited access to personal data on need-to-know basis</li>
+                <li>Secure authentication systems</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">4. Information Sharing and Disclosure</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Your Rights and Choices</h2>
               
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">4.1 Third-Party Services</h3>
-              <p className="mb-3">We use the following third-party services that may process your data:</p>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li><strong>OpenAI</strong>: For AI-powered news summarization (content processing only)</li>
-                <li><strong>Firebase Authentication</strong>: For secure account management and authentication</li>
-                <li><strong>Apple App Store</strong>: For subscription processing and payment handling</li>
-                <li><strong>Heroku</strong>: For secure data hosting and app infrastructure</li>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">6.1 Account Management</h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
+                <li><strong>Access</strong>: View your account information in app settings</li>
+                <li><strong>Update</strong>: Modify your preferences and account details</li>
+                <li><strong>Delete</strong>: Request account deletion through app or email</li>
+                <li><strong>Export</strong>: Request a copy of your data</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">4.2 Legal Requirements</h3>
-              <p className="mb-6">We may disclose your information if required by law, court order, or government request, or to protect our rights, property, or safety.</p>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">4.3 Business Transfers</h3>
-              <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">5. Data Storage and Security</h2>
-              
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">5.1 Data Location</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li><strong>Primary Storage</strong>: Heroku cloud infrastructure (United States)</li>
-                <li><strong>Local Storage</strong>: Minimal data stored locally on your device for app functionality</li>
-                <li><strong>Authentication</strong>: Firebase secure authentication services</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">5.2 Security Measures</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li>Industry-standard encryption for data transmission</li>
-                <li>Secure authentication protocols</li>
-                <li>Regular security updates and monitoring</li>
-                <li>Limited access to personal information on a need-to-know basis</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">5.3 Data Retention</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Anonymous Accounts</strong>: Data deleted when account is upgraded or app is uninstalled</li>
-                <li><strong>Permanent Accounts</strong>: Data retained until account deletion is requested</li>
-                <li><strong>Usage Data</strong>: Aggregated and anonymized data may be retained for service improvement</li>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">6.2 Communication Preferences</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li>Control push notification settings in app</li>
+                <li>Unsubscribe from email communications</li>
+                <li>Adjust daily summary timing and frequency</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">6. Your Rights and Choices</h2>
-              
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">6.1 Account Management</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li><strong>Account Upgrade</strong>: Convert anonymous account to permanent account at any time</li>
-                <li><strong>Account Deletion</strong>: Request complete account and data deletion</li>
-                <li><strong>Data Access</strong>: Request a copy of your personal data</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">6.2 Communication Preferences</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
-                <li><strong>Push Notifications</strong>: Enable or disable daily news reminders in app settings</li>
-                <li><strong>Notification Timing</strong>: Customize when you receive daily reminders</li>
-                <li><strong>Email Communications</strong>: Opt out of non-essential communications</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">6.3 Subscription Management</h3>
-              <ul className="list-disc list-inside space-y-2">
-                <li><strong>Subscription Control</strong>: Manage subscription through Apple App Store settings</li>
-                <li><strong>Cancellation</strong>: Cancel subscription at any time through Apple's system</li>
-              </ul>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Children's Privacy</h2>
+              <p className="text-sm">Root News is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we discover such information, we will delete it immediately.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">7. Children's Privacy</h2>
-              <p>Root News is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly.</p>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. International Data Transfers</h2>
+              <p className="text-sm">Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for international transfers.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">8. International Data Transfers</h2>
-              <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States where our servers are located. We ensure appropriate safeguards are in place for such transfers.</p>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Analytics and Tracking</h2>
+              <p className="text-sm">We use minimal analytics to understand app usage and improve our service. We do not use third-party advertising or tracking technologies.</p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">9. Analytics and Tracking</h2>
-              <p>We do not use third-party analytics services like Google Analytics. Any usage data collected is processed internally and used solely for service improvement purposes.</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">10. Changes to This Privacy Policy</h2>
-              <p className="mb-3">We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Posting the updated policy in the app</li>
-                <li>Sending an email notification (if you have provided an email address)</li>
-                <li>Displaying a prominent notice in the app</li>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to This Privacy Policy</h2>
+              <p className="mb-3 text-sm">We may update this Privacy Policy periodically. We will notify you of material changes through:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li>In-app notifications</li>
+                <li>Email notifications (if provided)</li>
+                <li>Updated policy posted on our website</li>
               </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">11. Contact Us</h2>
-              <p className="mb-3">If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
-              <div className="bg-dark-700 p-4 rounded-lg">
-                <ul className="list-disc list-inside space-y-1">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Contact Us</h2>
+              <p className="mb-3 text-sm">If you have questions about this Privacy Policy, please contact us:</p>
+              <div className="bg-gray-100 p-4 rounded-lg">
+                <ul className="list-disc list-inside space-y-1 text-gray-900">
                   <li><strong>Email</strong>: damian@rootnews.app</li>
                   <li><strong>Website</strong>: https://rootnews.app</li>
                   <li><strong>Address</strong>: Harju County, Tallinn, Lasnamäe District, Sepapaja Street 6, 15551</li>
@@ -187,19 +156,19 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">12. Legal Basis for Processing (GDPR)</h2>
-              <p className="mb-3">For users in the European Union, our legal basis for processing personal information includes:</p>
-              <ul className="list-disc list-inside space-y-2 mb-4">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Legal Basis for Processing (GDPR)</h2>
+              <p className="mb-3 text-sm">For users in the European Union, our legal basis for processing personal information includes:</p>
+              <ul className="list-disc list-inside space-y-2 mb-4 text-sm">
                 <li><strong>Contract Performance</strong>: To provide the Root News service you've subscribed to</li>
                 <li><strong>Legitimate Interest</strong>: To improve our service and provide customer support</li>
                 <li><strong>Consent</strong>: For optional features like push notifications</li>
                 <li><strong>Legal Obligation</strong>: To comply with applicable laws and regulations</li>
               </ul>
-              <p>You have the right to withdraw consent, request data portability, and lodge complaints with supervisory authorities under GDPR.</p>
+              <p className="text-sm">You have the right to withdraw consent, request data portability, and lodge complaints with supervisory authorities under GDPR.</p>
             </section>
 
-            <div className="border-t border-dark-600 pt-8 mt-12">
-              <p className="text-sm text-dark-400 italic text-center">
+            <div className="border-t border-gray-200 pt-8 mt-12">
+              <p className="text-sm text-gray-600 italic text-center">
                 This Privacy Policy is effective as of December 15, 2024 and was last updated on December 15, 2024.
               </p>
             </div>
