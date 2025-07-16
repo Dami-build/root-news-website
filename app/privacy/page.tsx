@@ -12,7 +12,7 @@ export default function Privacy() {
     <div className="min-h-screen bg-dark-900 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-dark-800 rounded-2xl p-8 md:p-12 border border-dark-700">
-          <h1 className="text-4xl font-bold text-white mb-8">Privacy Policy for RootNews</h1>
+          <h1 className="text-3xl font-bold text-white mb-8">Privacy Policy for RootNews</h1>
           
           <div className="space-y-8 text-dark-200">
             <div className="text-sm text-dark-400">
@@ -21,33 +21,33 @@ export default function Privacy() {
             </div>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">1. Introduction</h2>
-              <p className="mb-4">
+              <h2 className="text-xl font-semibold text-white mb-4">1. Introduction</h2>
+              <p className="mb-4 text-sm">
                 Root Labs OÜ ("we," "our," or "us") operates the RootNews mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">2. Information We Collect</h2>
+              <h2 className="text-xl font-semibold text-white mb-4">2. Information We Collect</h2>
               
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">2.1 Account Information</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
+              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.1 Account Information</h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>Anonymous Accounts</strong>: We create temporary anonymous accounts during onboarding to provide immediate access to our service</li>
                 <li><strong>Email and Password</strong>: If you choose to create a permanent account or upgrade from anonymous</li>
                 <li><strong>Apple ID Information</strong>: If you sign in with Apple, we receive your Apple ID, email (if shared), and name (if shared)</li>
                 <li><strong>Display Name</strong>: User-provided name for account personalization</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">2.2 Usage Information</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
+              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.2 Usage Information</h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>News Preferences</strong>: Categories you mark as favorites</li>
                 <li><strong>Notification Settings</strong>: Your daily reminder preferences and timing</li>
                 <li><strong>Subscription Information</strong>: Subscription type (Monthly/Annual) and status</li>
                 <li><strong>App Usage</strong>: Basic app functionality usage for service improvement</li>
               </ul>
 
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">2.3 Device Information</h3>
-              <ul className="list-disc list-inside space-y-2">
+              <h3 className="text-lg font-semibold text-primary-300 mb-3">2.3 Device Information</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm">
                 <li><strong>Device Type</strong>: To optimize app performance</li>
                 <li><strong>Push Notification Tokens</strong>: To deliver daily news reminders (only if enabled)</li>
                 <li><strong>Platform Information</strong>: iOS version and device capabilities</li>
@@ -55,10 +55,10 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-white mb-4">3. How We Use Your Information</h2>
+              <h2 className="text-xl font-semibold text-white mb-4">3. How We Use Your Information</h2>
               
-              <h3 className="text-xl font-semibold text-primary-300 mb-3">3.1 Service Provision</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6">
+              <h3 className="text-lg font-semibold text-primary-300 mb-3">3.1 Service Provision</h3>
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li>Create and manage your account (anonymous or permanent)</li>
                 <li>Provide personalized news summaries using AI technology</li>
                 <li>Deliver content based on your selected favorite categories</li>
