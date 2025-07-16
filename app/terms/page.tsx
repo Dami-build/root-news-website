@@ -12,7 +12,7 @@ export default function Terms() {
     <div className="min-h-screen bg-dark-900 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-dark-800 rounded-2xl p-8 md:p-12 border border-dark-700">
-          <h1 className="text-4xl font-bold text-white mb-8">Terms of Service for RootNews</h1>
+          <h1 className="text-4xl font-bold text-white mb-8">Terms of Service for Root News</h1>
           
           <div className="space-y-8 text-dark-200">
             <div className="text-sm text-dark-400">
@@ -23,13 +23,13 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">1. Agreement to Terms</h2>
               <p className="mb-4">
-                By downloading, installing, or using the RootNews mobile application ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.
+                By downloading, installing, or using the Root News mobile application ("Service"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Service.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">2. Description of Service</h2>
-              <p className="mb-3">RootNews is a news aggregation and summarization service that:</p>
+              <p className="mb-3">Root News is a news aggregation and summarization service that:</p>
               <ul className="list-disc list-inside space-y-2">
                 <li>Aggregates news from trusted international sources</li>
                 <li>Provides AI-powered summaries of news articles</li>
@@ -130,7 +130,7 @@ export default function Terms() {
               <ul className="list-disc list-inside space-y-2 mb-6">
                 <li>AI-generated summaries are our proprietary content</li>
                 <li>App design, features, and functionality are our intellectual property</li>
-                <li>RootNews name, logo, and branding are our trademarks</li>
+                <li>Root News name, logo, and branding are our trademarks</li>
               </ul>
 
               <h3 className="text-xl font-semibold text-primary-300 mb-3">6.2 Third-Party Content</h3>

@@ -12,7 +12,7 @@ export default function Privacy() {
     <div className="min-h-screen bg-dark-900 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="bg-dark-800 rounded-2xl p-8 md:p-12 border border-dark-700">
-          <h1 className="text-3xl font-bold text-white mb-8">Privacy Policy for RootNews</h1>
+          <h1 className="text-3xl font-bold text-white mb-8">Privacy Policy for Root News</h1>
           
           <div className="space-y-8 text-dark-200">
             <div className="text-sm text-dark-400">
@@ -23,7 +23,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-4">1. Introduction</h2>
               <p className="mb-4 text-sm">
-                Root Labs OÜ ("we," "our," or "us") operates the RootNews mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
+                Root Labs OÜ ("we," "our," or "us") operates the Root News mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
               </p>
             </section>
 
@@ -151,7 +151,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">7. Children's Privacy</h2>
-              <p>RootNews is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly.</p>
+              <p>Root News is intended for users aged 13 and older. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly.</p>
             </section>
 
             <section>
@@ -190,7 +190,7 @@ export default function Privacy() {
               <h2 className="text-2xl font-semibold text-white mb-4">12. Legal Basis for Processing (GDPR)</h2>
               <p className="mb-3">For users in the European Union, our legal basis for processing personal information includes:</p>
               <ul className="list-disc list-inside space-y-2 mb-4">
-                <li><strong>Contract Performance</strong>: To provide the RootNews service you've subscribed to</li>
+                <li><strong>Contract Performance</strong>: To provide the Root News service you've subscribed to</li>
                 <li><strong>Legitimate Interest</strong>: To improve our service and provide customer support</li>
                 <li><strong>Consent</strong>: For optional features like push notifications</li>
                 <li><strong>Legal Obligation</strong>: To comply with applicable laws and regulations</li>
