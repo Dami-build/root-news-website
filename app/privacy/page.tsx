@@ -9,19 +9,19 @@ export const metadata: Metadata = {
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-dark-900 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-dark-800 rounded-2xl p-8 md:p-12 border border-dark-700">
-          <h1 className="text-3xl font-bold text-white mb-8">Privacy Policy for Root News</h1>
+        <div className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200 shadow-sm">
+          <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy for Root News</h1>
           
-          <div className="space-y-8 text-dark-200">
-            <div className="text-sm text-dark-400">
+          <div className="space-y-8 text-gray-700">
+            <div className="text-sm text-gray-500">
               <p><strong>Effective Date:</strong> December 15, 2024</p>
               <p><strong>Last Updated:</strong> December 15, 2024</p>
             </div>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-4">1. Introduction</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
               <p className="mb-4 text-sm">
                 Root Labs OÜ ("we," "our," or "us") operates the Root News mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
               </p>

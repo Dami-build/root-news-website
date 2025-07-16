@@ -66,7 +66,7 @@ export default function AnimatedDivider() {
         // Draw particle
         ctx.beginPath()
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-        ctx.fillStyle = `hsla(${particle.hue}, 70%, 60%, ${particle.opacity})`
+        ctx.fillStyle = `hsla(${particle.hue}, 50%, 40%, ${particle.opacity})`
         ctx.fill()
 
         // Draw connections
@@ -80,7 +80,7 @@ export default function AnimatedDivider() {
               ctx.beginPath()
               ctx.moveTo(particle.x, particle.y)
               ctx.lineTo(otherParticle.x, otherParticle.y)
-              ctx.strokeStyle = `hsla(${particle.hue}, 70%, 60%, ${0.1 * (1 - distance / 100)})`
+              ctx.strokeStyle = `hsla(${particle.hue}, 50%, 40%, ${0.1 * (1 - distance / 100)})`
               ctx.lineWidth = 0.5
               ctx.stroke()
             }
@@ -103,7 +103,7 @@ export default function AnimatedDivider() {
     <section className="relative h-32 overflow-hidden">
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary-500/5 to-transparent"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-950 via-transparent to-dark-950"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-transparent to-gray-50"></div>
       
       {/* Animated canvas */}
       <canvas

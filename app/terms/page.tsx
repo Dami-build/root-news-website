@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 
 export default function Terms() {
   return (
-    <div className="min-h-screen bg-dark-900 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-dark-800 rounded-2xl p-8 md:p-12 border border-dark-700">
-          <h1 className="text-4xl font-bold text-white mb-8">Terms of Service for Root News</h1>
+        <div className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200 shadow-sm">
+          <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service for Root News</h1>
           
-          <div className="space-y-8 text-dark-200">
+          <div className="space-y-8 text-gray-700">
             <div className="text-sm text-dark-400">
               <p><strong>Effective Date:</strong> June 11, 2025</p>
               <p><strong>Last Updated:</strong> June 11, 2025</p>

@@ -55,10 +55,10 @@ export default function Features() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 fade-in-up">
-            Why <span className="bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent animate-gradient-x">Root News</span>?
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 fade-in-up">
+            Why <span className="bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800 bg-clip-text text-transparent animate-gradient-x">Root News</span>?
           </h2>
-          <p className="text-lg text-dark-300 max-w-3xl mx-auto fade-in-up-delay-1">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto fade-in-up-delay-1">
             Skip the noise and information overload. Get only the essential news points from trusted sources, delivered in seconds.
           </p>
         </div>
@@ -71,16 +71,16 @@ export default function Features() {
             return (
               <div
                 key={index}
-                className={`card hover:bg-dark-800/50 transition-all duration-500 group hover:scale-105 hover:-translate-y-2 ${delayClass}`}
+                className={`card hover:bg-gray-100/50 transition-all duration-500 group hover:scale-105 hover:-translate-y-2 ${delayClass}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className={`w-14 h-14 bg-gradient-to-br ${feature.color} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg group-hover:shadow-2xl`}>
                   <IconComponent className="w-7 h-7 text-white group-hover:scale-110 transition-transform duration-300" />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-primary-300 transition-colors duration-300 flex items-center gap-2">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300 flex items-center gap-2">
                   {feature.title} <span className="text-xl">{feature.emoji}</span>
                 </h3>
-                <p className="text-sm text-dark-300 leading-relaxed group-hover:text-dark-200 transition-colors duration-300">
+                <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                   {feature.description}
                 </p>
                 
