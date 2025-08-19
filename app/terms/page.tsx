@@ -70,8 +70,8 @@ export default function Terms() {
               
               <h3 className="text-xl font-semibold text-gray-800 mb-3">4.1 Subscription Types</h3>
               <ul className="list-disc list-inside space-y-2 mb-6">
-                <li><strong>Monthly Subscription</strong>: $4.99 per month</li>
-                <li><strong>Annual Subscription</strong>: $49.99 per year</li>
+                <li><strong>Monthly Subscription</strong>: $9.99 per month</li>
+                <li><strong>Annual Subscription</strong>: $39.99 per year</li>
                 <li>All subscriptions are processed through Apple App Store</li>
               </ul>
 
@@ -288,7 +288,7 @@ export default function Terms() {
               <p className="mb-3">For questions about these Terms of Service, contact us:</p>
               <div className="bg-gray-100 p-4 rounded-lg">
                 <ul className="list-disc list-inside space-y-1 text-gray-900">
-                  <li><strong>Email</strong>: damian@rootnews.app</li>
+                  <li><strong>Email</strong>: support@rootnews.app</li>
                   <li><strong>Website</strong>: https://rootnews.app</li>
                   <li><strong>Address</strong>: Harju County, Tallinn, Lasnamäe District, Sepapaja Street 6, 15551</li>
                 </ul>
@@ -306,7 +306,7 @@ export default function Terms() {
                 <p className="font-semibold text-gray-900 mb-2">Service Provider:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-900">
                   <li><strong>Company</strong>: Root Labs OÜ (Estonia)</li>
-                  <li><strong>Contact</strong>: damian@rootnews.app</li>
+                  <li><strong>Contact</strong>: support@rootnews.app</li>
                   <li><strong>Website</strong>: https://rootnews.app</li>
                   <li><strong>Address</strong>: Harju County, Tallinn, Lasnamäe District, Sepapaja Street 6, 15551</li>
                 </ul>

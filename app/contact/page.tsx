@@ -33,7 +33,7 @@ export default function ContactPage() {
       )
       
       // Open default email client
-      window.location.href = `mailto:damian@rootnews.app?subject=${subject}&body=${body}`
+      window.location.href = `mailto:support@rootnews.app?subject=${subject}&body=${body}`
       
       setSubmitStatus('success')
       setFormData({ name: '', subject: '', message: '' })

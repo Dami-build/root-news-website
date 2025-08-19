@@ -148,7 +148,7 @@ export default function Privacy() {
               <p className="mb-3 text-sm">If you have questions about this Privacy Policy, please contact us:</p>
               <div className="bg-gray-100 p-4 rounded-lg">
                 <ul className="list-disc list-inside space-y-1 text-gray-900">
-                  <li><strong>Email</strong>: damian@rootnews.app</li>
+                  <li><strong>Email</strong>: support@rootnews.app</li>
                   <li><strong>Website</strong>: https://rootnews.app</li>
                   <li><strong>Address</strong>: Harju County, Tallinn, Lasnamäe District, Sepapaja Street 6, 15551</li>
                 </ul>
