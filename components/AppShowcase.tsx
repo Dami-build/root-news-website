@@ -1,89 +1,72 @@
-import { Smartphone, Download } from 'lucide-react'
+import { MessageSquare, Newspaper, Headphones } from 'lucide-react'
+
+const proFeatures = [
+  {
+    icon: MessageSquare,
+    title: 'Ask Root',
+    description:
+      'Ask AI anything about any article. Get instant, contextual answers powered by the full story.',
+  },
+  {
+    icon: Newspaper,
+    title: 'Daily Briefing',
+    description:
+      'A personalized morning briefing covering your selected categories. Text and audio — listen on the go, even from your lock screen.',
+  },
+  {
+    icon: Headphones,
+    title: 'Audio Briefings',
+    description:
+      'Your news, read to you. Choose your preferred voice. Play in the background like a podcast.',
+  },
+]
 
 export default function AppShowcase() {
   return (
-    <section id="download" className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+    <section id="pro" className="py-24 px-4 sm:px-6 lg:px-8 relative">
+      {/* Subtle gold glow */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="w-[600px] h-[400px] bg-[#B8860B] opacity-[0.04] rounded-full blur-[150px]" />
+      </div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="text-center mb-16" data-animate>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#B8860B]/30 bg-[#B8860B]/10 text-sm font-medium mb-6">
+            <span className="gold-text">Root Pro</span>
+          </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Download Root News
+            Go deeper with <span className="gold-text">Root Pro</span>
           </h2>
-          <p className="text-xl text-dark-300 max-w-3xl mx-auto">
-            Get early access to AI-powered news summaries. Be among the first to experience the future of news.
+          <p className="text-lg text-[#AAAAAA] max-w-2xl mx-auto">
+            Unlock AI-powered Q&A, personalized daily briefings, and audio news
+            — all designed to keep you informed effortlessly.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* App Preview */}
-          <div className="order-2 lg:order-1">
-            <div className="relative">
-              <div className="bg-gradient-to-r from-primary-600/20 to-primary-800/20 rounded-3xl p-8 border border-primary-800/30">
-                <div className="text-center">
-                  <div className="w-48 h-48 mx-auto bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl flex items-center justify-center mb-6">
-                    <Smartphone className="w-24 h-24 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">
-                    Your Pocket News Assistant
-                  </h3>
-                  <div className="grid grid-cols-2 gap-4 text-sm text-dark-300">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary-400">Early</div>
-                      <div>Access</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary-400">iOS</div>
-                      <div>Coming Soon</div>
-                    </div>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {proFeatures.map((feature, i) => {
+            const Icon = feature.icon
+            return (
+              <div
+                key={i}
+                className="glass-card group border-[#B8860B]/20 hover:border-[#B8860B]/40"
+                data-animate
+                data-animate-delay={String(i + 1)}
+              >
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#B8860B] to-[#DAA520] flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <Icon className="w-6 h-6 text-[#0A0A0F]" />
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Download Section */}
-          <div className="order-1 lg:order-2">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Get Early Access
+                <h3 className="text-lg font-semibold text-white mb-3">
+                  {feature.title}
                 </h3>
-                <p className="text-dark-300 text-lg leading-relaxed mb-6">
-                  Join the waitlist for Root News and be among the first to experience AI-powered news summaries. 
-                  Early access members get exclusive features and priority support.
+                <p className="text-sm text-[#AAAAAA] leading-relaxed">
+                  {feature.description}
                 </p>
               </div>
-
-              {/* Download Buttons */}
-              <div className="space-y-4">
-                <button className="w-full sm:w-auto btn-primary flex items-center justify-center space-x-3 text-lg px-8 py-4">
-                  <Download className="w-5 h-5" />
-                  <span>Join iOS Waitlist</span>
-                </button>
-              </div>
-
-              {/* Features List */}
-              <div className="space-y-3 pt-6">
-                <div className="flex items-center space-x-3 text-dark-300">
-                  <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                  <span>Early access to new features</span>
-                </div>
-                <div className="flex items-center space-x-3 text-dark-300">
-                  <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                  <span>Premium AI-powered summaries</span>
-                </div>
-                <div className="flex items-center space-x-3 text-dark-300">
-                  <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                  <span>Works offline for saved articles</span>
-                </div>
-                <div className="flex items-center space-x-3 text-dark-300">
-                  <div className="w-2 h-2 bg-primary-500 rounded-full"></div>
-                  <span>Priority customer support</span>
-                </div>
-              </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </section>
   )
-} 
+}

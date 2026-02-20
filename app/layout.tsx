@@ -5,32 +5,32 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Root News - Stay Informed with AI-Powered News Summaries',
-  description: 'Get the most important news of the day with AI-powered summaries. Our app aggregates news from multiple sources and delivers concise, relevant updates.',
-  keywords: 'AI news, news aggregation, news summaries, artificial intelligence, daily news, news app, Root News',
-  authors: [{ name: 'Root News Team' }],
+  title: 'Root News — The News, Simplified',
+  description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
+  keywords: 'AI news, news aggregation, news summaries, artificial intelligence, daily news, news app, Root News, daily briefing, audio news',
+  authors: [{ name: 'Root Labs OÜ' }],
   creator: 'Root News',
-  publisher: 'Root News',
+  publisher: 'Root Labs OÜ',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://your-domain.com'), // Replace with your actual domain
+  metadataBase: new URL('https://www.rootnews.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Root News - Stay Informed with AI-Powered News Summaries',
-    description: 'Get the most important news of the day with AI-powered summaries. Our app aggregates news from multiple sources and delivers concise, relevant updates.',
-    url: 'https://your-domain.com', // Replace with your actual domain
+    title: 'Root News — The News, Simplified',
+    description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
+    url: 'https://www.rootnews.app',
     siteName: 'Root News',
     images: [
       {
-        url: '/og-image.jpg', // You'll need to add this image
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Root News App',
+        alt: 'Root News — The News, Simplified',
       },
     ],
     locale: 'en_US',
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Root News - Stay Informed with AI-Powered News Summaries',
-    description: 'Get the most important news of the day with AI-powered summaries.',
-    images: ['/og-image.jpg'], // You'll need to add this image
+    title: 'Root News — The News, Simplified',
+    description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Free on iOS.',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
@@ -52,9 +52,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code', // Replace with your actual verification code
   },
 }
 
@@ -78,5 +75,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-// Force deployment trigger 
