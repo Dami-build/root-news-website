@@ -16,8 +16,8 @@ export default function Privacy() {
           
           <div className="space-y-8 text-gray-700">
             <div className="text-sm text-gray-500">
-              <p><strong>Effective Date:</strong> December 15, 2024</p>
-              <p><strong>Last Updated:</strong> December 15, 2024</p>
+              <p><strong>Effective Date:</strong> January 31, 2026</p>
+              <p><strong>Last Updated:</strong> January 31, 2026</p>
             </div>
 
             <section>
@@ -44,13 +44,23 @@ export default function Privacy() {
                 <li><strong>Notification Settings</strong>: Your daily reminder preferences and timing</li>
                 <li><strong>Subscription Information</strong>: Subscription type (Monthly/Annual) and status</li>
                 <li><strong>App Usage</strong>: Basic app functionality usage for service improvement</li>
+                <li><strong>Daily Briefing Interactions</strong>: Categories selected and audio briefing plays</li>
+                <li><strong>Ask Root Usage</strong>: Question count and usage patterns</li>
+                <li><strong>In-App Review Responses</strong>: Responses to in-app review prompts</li>
               </ul>
 
               <h3 className="text-lg font-semibold text-gray-800 mb-3">2.3 Device Information</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>Device Type</strong>: To optimize app performance</li>
                 <li><strong>Push Notification Tokens</strong>: To deliver daily news reminders (only if enabled)</li>
                 <li><strong>Platform Information</strong>: iOS version and device capabilities</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.4 AI Interaction Data</h3>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>Ask Root Questions</strong>: Questions you submit through the Ask Root AI Q&A feature are sent to OpenAI for processing. These questions are not stored long-term by Root News.</li>
+                <li><strong>Daily Briefing Preferences</strong>: Your selected news categories and preferred voice for audio briefings, stored locally on your device</li>
+                <li><strong>Audio Briefing Requests</strong>: Requests to generate audio versions of your Daily Briefing</li>
               </ul>
             </section>
 
@@ -70,12 +80,20 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Information Sharing and Disclosure</h2>
               <p className="mb-3 text-sm">We do not sell, trade, or rent your personal information. We may share information only in these limited circumstances:</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
+              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
                 <li><strong>Apple App Store</strong>: Subscription and payment processing</li>
-                <li><strong>Service Providers</strong>: Trusted third parties who assist in service delivery (under strict confidentiality agreements)</li>
                 <li><strong>Legal Requirements</strong>: When required by law, court order, or to protect our rights</li>
                 <li><strong>Business Transfers</strong>: In connection with a merger, acquisition, or sale of assets (with user notification)</li>
                 <li><strong>Consent</strong>: When you explicitly agree to sharing</li>
+              </ul>
+
+              <p className="mb-3 text-sm font-semibold">We use the following third-party service providers:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>OpenAI</strong>: Processes AI-generated news summaries, Ask Root Q&A responses, and text-to-speech audio for Daily Briefings. User questions and article context are sent to OpenAI's API for processing. OpenAI's data usage policies apply.</li>
+                <li><strong>Mixpanel</strong>: Analytics platform used to understand app usage, retention, and feature engagement. Collects anonymized usage events.</li>
+                <li><strong>AppsFlyer</strong>: Mobile attribution and marketing analytics. Collects device-level attribution data subject to Apple's App Tracking Transparency framework.</li>
+                <li><strong>Superwall</strong>: Paywall and subscription management. Handles paywall presentation and conversion tracking.</li>
+                <li><strong>Supabase</strong>: Cloud database hosting for user accounts and content storage.</li>
               </ul>
             </section>
 
@@ -130,11 +148,28 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Analytics and Tracking</h2>
-              <p className="text-sm">We use minimal analytics to understand app usage and improve our service. We do not use third-party advertising or tracking technologies.</p>
+              <p className="mb-3 text-sm">We use analytics tools to understand how our app is used and to improve the Service. We do not serve third-party advertisements.</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>Mixpanel</strong>: We use Mixpanel for product analytics, including feature engagement, retention, and usage patterns. Data collected by Mixpanel is anonymized.</li>
+                <li><strong>AppsFlyer</strong>: We use AppsFlyer for mobile attribution and marketing analytics. AppsFlyer respects Apple's App Tracking Transparency (ATT) framework, and attribution data is only collected with your consent where required.</li>
+                <li><strong>Superwall</strong>: We use Superwall for paywall analytics and subscription conversion tracking.</li>
+              </ul>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to This Privacy Policy</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. AI Data Processing</h2>
+              <p className="mb-3 text-sm">Root News uses artificial intelligence (powered by OpenAI) to generate content and provide features throughout the app:</p>
+              <ul className="list-disc list-inside space-y-2 text-sm">
+                <li><strong>News Summaries and Deep Dives</strong>: Article summaries and in-depth analyses are generated using AI based on content from trusted news sources.</li>
+                <li><strong>Ask Root</strong>: Questions submitted through Ask Root are sent to OpenAI for processing. Root News does not permanently store your Ask Root questions.</li>
+                <li><strong>Daily Briefings</strong>: Personalized text briefings are generated using AI from the day's top stories in your selected categories.</li>
+                <li><strong>Audio Briefings</strong>: Audio versions of Daily Briefings are generated server-side using OpenAI text-to-speech technology and streamed to your device.</li>
+                <li><strong>Accuracy</strong>: AI-generated outputs may contain inaccuracies. Users should verify important information with original sources.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Changes to This Privacy Policy</h2>
               <p className="mb-3 text-sm">We may update this Privacy Policy periodically. We will notify you of material changes through:</p>
               <ul className="list-disc list-inside space-y-2 text-sm">
                 <li>In-app notifications</li>
@@ -144,7 +179,7 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Contact Us</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Contact Us</h2>
               <p className="mb-3 text-sm">If you have questions about this Privacy Policy, please contact us:</p>
               <div className="bg-gray-100 p-4 rounded-lg">
                 <ul className="list-disc list-inside space-y-1 text-gray-900">
@@ -156,7 +191,7 @@ export default function Privacy() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Legal Basis for Processing (GDPR)</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 mb-4">13. Legal Basis for Processing (GDPR)</h2>
               <p className="mb-3 text-sm">For users in the European Union, our legal basis for processing personal information includes:</p>
               <ul className="list-disc list-inside space-y-2 mb-4 text-sm">
                 <li><strong>Contract Performance</strong>: To provide the Root News service you've subscribed to</li>
@@ -169,7 +204,7 @@ export default function Privacy() {
 
             <div className="border-t border-gray-200 pt-8 mt-12">
               <p className="text-sm text-gray-600 italic text-center">
-                This Privacy Policy is effective as of December 15, 2024 and was last updated on December 15, 2024.
+                This Privacy Policy is effective as of January 31, 2026 and was last updated on January 31, 2026.
               </p>
             </div>
           </div>
@@ -177,4 +212,4 @@ export default function Privacy() {
       </div>
     </div>
   )
-} 
+}
