@@ -16,8 +16,8 @@ export default function Terms() {
           
           <div className="space-y-8 text-gray-700">
             <div className="text-sm text-dark-400">
-              <p><strong>Effective Date:</strong> January 31, 2026</p>
-              <p><strong>Last Updated:</strong> January 31, 2026</p>
+              <p><strong>Effective Date:</strong> April 13, 2026</p>
+              <p><strong>Last Updated:</strong> April 13, 2026</p>
             </div>
 
             <section>
@@ -369,7 +369,7 @@ export default function Terms() {
 
             <div className="border-t border-gray-200 pt-8 mt-12">
               <p className="text-sm text-gray-600 italic text-center">
-                These Terms of Service are effective as of January 31, 2026 and were last updated on January 31, 2026.
+                These Terms of Service are effective as of April 13, 2026 and were last updated on April 13, 2026.
               </p>
             </div>
           </div>

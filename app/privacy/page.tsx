@@ -16,8 +16,8 @@ export default function Privacy() {
           
           <div className="space-y-8 text-gray-700">
             <div className="text-sm text-gray-500">
-              <p><strong>Effective Date:</strong> January 31, 2026</p>
-              <p><strong>Last Updated:</strong> January 31, 2026</p>
+              <p><strong>Effective Date:</strong> April 13, 2026</p>
+              <p><strong>Last Updated:</strong> April 13, 2026</p>
             </div>
 
             <section>
@@ -204,7 +204,7 @@ export default function Privacy() {
 
             <div className="border-t border-gray-200 pt-8 mt-12">
               <p className="text-sm text-gray-600 italic text-center">
-                This Privacy Policy is effective as of January 31, 2026 and was last updated on January 31, 2026.
+                This Privacy Policy is effective as of April 13, 2026 and was last updated on April 13, 2026.
               </p>
             </div>
           </div>

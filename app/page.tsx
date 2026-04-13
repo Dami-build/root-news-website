@@ -39,7 +39,6 @@ const showcase = [
 ]
 
 const stats = [
-  { value: '#172', label: 'in US News Apps' },
   { value: '100+', label: 'Trusted sources' },
   { value: '8x', label: 'Updated daily' },
 ]
@@ -177,7 +176,7 @@ export default function Home() {
         {/* Social proof stats */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div
-            className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center"
+            className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 text-center"
             data-animate
           >
             {stats.map((s, i) => (
