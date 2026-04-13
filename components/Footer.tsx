@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-[#333333]/50 text-center">
-          <p className="text-xs text-[#555555]">Made in Estonia</p>
+          <p className="text-xs text-[#555555]">Made by Root Labs O&Uuml;</p>
         </div>
       </div>
     </footer>
