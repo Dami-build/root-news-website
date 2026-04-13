@@ -101,7 +101,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-[#AAAAAA] mb-10 max-w-2xl mx-auto leading-relaxed fade-in-up-delay-1">
-          AI-powered summaries from 100+ trusted sources. 10 categories. Updated every 3 hours. The only news app you need.
+          AI-powered summaries from 100+ trusted sources. 10 categories. The only news app you need.
         </p>
 
         <div className="fade-in-up-delay-2">

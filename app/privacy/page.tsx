@@ -45,7 +45,7 @@ export default function Privacy() {
                 <li><strong>Subscription Information</strong>: Subscription type (Monthly/Annual) and status</li>
                 <li><strong>App Usage</strong>: Basic app functionality usage for service improvement</li>
                 <li><strong>Daily Briefing Interactions</strong>: Categories selected and audio briefing plays</li>
-                <li><strong>Ask Root Usage</strong>: Question count and usage patterns</li>
+                <li><strong>Deep Dive Usage</strong>: Feature usage count and patterns</li>
                 <li><strong>In-App Review Responses</strong>: Responses to in-app review prompts</li>
               </ul>
 
@@ -58,7 +58,7 @@ export default function Privacy() {
 
               <h3 className="text-lg font-semibold text-gray-800 mb-3">2.4 AI Interaction Data</h3>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>Ask Root Questions</strong>: Questions you submit through the Ask Root AI Q&A feature are sent to OpenAI for processing. These questions are not stored long-term by Root News.</li>
+                <li><strong>Deep Dive Interactions</strong>: Your use of deep dive features such as Quick Catch-up, Why This Matters, Full Context, and Both Sides. These interactions are processed by our AI providers and are not stored long-term by Root News.</li>
                 <li><strong>Daily Briefing Preferences</strong>: Your selected news categories and preferred voice for audio briefings, stored locally on your device</li>
                 <li><strong>Audio Briefing Requests</strong>: Requests to generate audio versions of your Daily Briefing</li>
               </ul>
@@ -89,7 +89,7 @@ export default function Privacy() {
 
               <p className="mb-3 text-sm font-semibold">We use the following third-party service providers:</p>
               <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>OpenAI</strong>: Processes AI-generated news summaries, Ask Root Q&A responses, and text-to-speech audio for Daily Briefings. User questions and article context are sent to OpenAI's API for processing. OpenAI's data usage policies apply.</li>
+                <li><strong>AI Processing Providers</strong>: Third-party AI services process news summaries, deep dive responses, and text-to-speech audio for Daily Briefings. Article context may be sent to these providers for processing. Their respective data usage policies apply.</li>
                 <li><strong>Mixpanel</strong>: Analytics platform used to understand app usage, retention, and feature engagement. Collects anonymized usage events.</li>
                 <li><strong>AppsFlyer</strong>: Mobile attribution and marketing analytics. Collects device-level attribution data subject to Apple's App Tracking Transparency framework.</li>
                 <li><strong>Superwall</strong>: Paywall and subscription management. Handles paywall presentation and conversion tracking.</li>
@@ -158,12 +158,12 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. AI Data Processing</h2>
-              <p className="mb-3 text-sm">Root News uses artificial intelligence (powered by OpenAI) to generate content and provide features throughout the app:</p>
+              <p className="mb-3 text-sm">Root News uses artificial intelligence to generate content and provide features throughout the app:</p>
               <ul className="list-disc list-inside space-y-2 text-sm">
                 <li><strong>News Summaries and Deep Dives</strong>: Article summaries and in-depth analyses are generated using AI based on content from trusted news sources.</li>
-                <li><strong>Ask Root</strong>: Questions submitted through Ask Root are sent to OpenAI for processing. Root News does not permanently store your Ask Root questions.</li>
+                <li><strong>Deep Dive Features</strong>: Preset deep dives (Quick Catch-up, Why This Matters, Full Context, Both Sides) are processed by our AI providers. Root News does not permanently store your deep dive interactions.</li>
                 <li><strong>Daily Briefings</strong>: Personalized text briefings are generated using AI from the day's top stories in your selected categories.</li>
-                <li><strong>Audio Briefings</strong>: Audio versions of Daily Briefings are generated server-side using OpenAI text-to-speech technology and streamed to your device.</li>
+                <li><strong>Audio Briefings</strong>: Audio versions of Daily Briefings are generated server-side using AI text-to-speech technology and streamed to your device.</li>
                 <li><strong>Accuracy</strong>: AI-generated outputs may contain inaccuracies. Users should verify important information with original sources.</li>
               </ul>
             </section>

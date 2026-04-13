@@ -12,10 +12,9 @@ const freeFeatures = [
 
 const proFeatures = [
   'Everything in Free',
-  'Ask Root AI deep dives',
   'Daily audio briefings',
   'Personalized morning brief',
-  'Priority new features',
+  'Deep dive presets: Quick Catch-up, Why This Matters, Full Context, Both Sides',
 ]
 
 export default function AppShowcase() {
@@ -31,7 +30,7 @@ export default function AppShowcase() {
             Free to start. <span className="gold-text">Pro</span> when you&apos;re ready.
           </h2>
           <p className="text-lg text-[#AAAAAA] max-w-xl mx-auto">
-            Core news features are free forever. Upgrade to Pro for AI deep dives and audio briefings.
+            Core news features are free forever. Upgrade to Pro for deep dives and audio briefings.
           </p>
         </div>
 

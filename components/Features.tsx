@@ -6,21 +6,21 @@ const steps = [
     icon: LayoutGrid,
     title: 'Pick your categories',
     description:
-      'Choose from 10+ topics — World, Tech, Finance, Crypto, Health, Sports, and more. Your feed shows only what you care about.',
+      'Choose from 10+ topics - World, Tech, Finance, Crypto, Health, Sports, and more. Your feed shows only what you care about.',
   },
   {
     num: '02',
     icon: Zap,
     title: 'Read AI summaries',
     description:
-      'Every story distilled to the key points. Headlines, bullet-point summaries, and context — ready in seconds.',
+      'Every story distilled to the key points. Headlines, bullet-point summaries, and context - ready in seconds.',
   },
   {
     num: '03',
     icon: Layers,
     title: 'Go deeper when you want',
     description:
-      'Tap any story for a deep dive, or ask Root AI anything about the article. Like having a newsroom working just for you.',
+      'Tap any story for a deep dive. See full context, get both sides, or catch up in seconds. Like having a newsroom working just for you.',
   },
 ]
 

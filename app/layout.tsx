@@ -6,7 +6,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Root News — The News, Simplified',
+  title: 'Root News - The News, Simplified',
   description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
   keywords: 'AI news, news aggregation, news summaries, artificial intelligence, daily news, news app, Root News, daily briefing, audio news',
   authors: [{ name: 'Root Labs OÜ' }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Root News — The News, Simplified',
+    title: 'Root News - The News, Simplified',
     description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
     url: 'https://www.rootnews.app',
     siteName: 'Root News',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Root News — The News, Simplified',
+        alt: 'Root News - The News, Simplified',
       },
     ],
     locale: 'en_US',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Root News — The News, Simplified',
+    title: 'Root News - The News, Simplified',
     description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Free on iOS.',
     images: ['/og-image.jpg'],
   },
