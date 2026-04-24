@@ -31,7 +31,7 @@ export default function AppShowcase() {
             <span className="text-[#C9960C]">Pro</span> when you&apos;re
             ready.
           </h2>
-          <p className="text-[13px] text-white/35 mt-3 max-w-md mx-auto">
+          <p className="text-[13px] text-white/40 mt-3 max-w-md mx-auto">
             Core news features are free forever. Upgrade for deep dives and
             audio briefings.
           </p>
@@ -42,7 +42,7 @@ export default function AppShowcase() {
           data-animate
           data-animate-delay="1"
         >
-          <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8">
+          <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 sm:p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
             <div className="mb-6">
               <span className="text-[11px] font-medium text-white/30 uppercase tracking-[0.15em]">
                 Free
@@ -71,36 +71,44 @@ export default function AppShowcase() {
             </a>
           </div>
 
-          <div className="rounded-2xl border border-[#B8860B]/12 bg-[#B8860B]/[0.02] p-6 sm:p-8 relative overflow-hidden">
-            <div className="mb-6">
-              <span className="text-[11px] font-medium text-[#C9960C] uppercase tracking-[0.15em]">
-                Root Pro
-              </span>
-              <div className="mt-2 flex items-baseline gap-1">
-                <span className="text-2xl font-bold text-white">$4.99</span>
-                <span className="text-[11px] text-white/20">/mo</span>
+          <div className="rounded-2xl border border-[#B8860B]/15 bg-[#B8860B]/[0.02] p-6 sm:p-8 relative overflow-hidden shadow-[inset_0_1px_0_rgba(218,165,32,0.06)]">
+            <div
+              className="absolute -top-20 -right-20 w-48 h-48 rounded-full blur-[80px] pointer-events-none"
+              style={{ background: 'rgba(184, 134, 11, 0.06)' }}
+            />
+            <div className="relative">
+              <div className="mb-6">
+                <span className="text-[11px] font-medium text-[#C9960C] uppercase tracking-[0.15em]">
+                  Root Pro
+                </span>
+                <div className="mt-2 flex items-baseline gap-1">
+                  <span className="text-2xl font-bold text-white">$4.99</span>
+                  <span className="text-[11px] text-white/20">/mo</span>
+                </div>
+                <p className="text-[11px] text-white/20 mt-1">
+                  or $29.99/year
+                </p>
               </div>
-              <p className="text-[11px] text-white/20 mt-1">or $29.99/year</p>
+              <ul className="space-y-3">
+                {proFeatures.map((f, i) => (
+                  <li
+                    key={i}
+                    className="flex items-start gap-2.5 text-[13px] text-white/50"
+                  >
+                    <Check className="w-3.5 h-3.5 text-[#C9960C]/70 flex-shrink-0 mt-0.5" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold text-[12px] px-5 py-2.5 w-full mt-8"
+              >
+                Start with Pro
+              </a>
             </div>
-            <ul className="space-y-3">
-              {proFeatures.map((f, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-2.5 text-[13px] text-white/50"
-                >
-                  <Check className="w-3.5 h-3.5 text-[#C9960C]/70 flex-shrink-0 mt-0.5" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold text-[12px] px-5 py-2.5 w-full mt-8"
-            >
-              Start with Pro
-            </a>
           </div>
         </div>
       </div>

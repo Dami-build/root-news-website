@@ -35,13 +35,13 @@ export default function Features() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {steps.map((step, i) => (
             <div key={i} data-animate data-animate-delay={String(i + 1)}>
-              <span className="text-[11px] text-white/10 font-mono">
+              <span className="text-[11px] text-[#B8860B]/30 font-mono">
                 {step.num}
               </span>
               <h3 className="text-sm font-medium text-white mt-3 mb-2">
                 {step.title}
               </h3>
-              <p className="text-[13px] text-white/35 leading-relaxed">
+              <p className="text-[13px] text-white/40 leading-relaxed">
                 {step.description}
               </p>
             </div>

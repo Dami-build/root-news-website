@@ -8,27 +8,29 @@ export default function Hero() {
         className="absolute inset-0 overflow-hidden pointer-events-none"
         aria-hidden="true"
       >
+        {/* Warm breathing glow */}
         <div
-          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full blur-[180px]"
-          style={{ background: 'rgba(184, 134, 11, 0.035)' }}
+          className="absolute top-[35%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] rounded-full blur-[150px]"
+          style={{ background: 'rgba(184, 134, 11, 0.07)', animation: 'heroGlow 8s ease-in-out infinite' }}
+        />
+        {/* Cool accent glow */}
+        <div
+          className="absolute top-[55%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-[400px] h-[250px] rounded-full blur-[140px]"
+          style={{ background: 'rgba(91, 110, 245, 0.05)' }}
         />
       </div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-2xl mx-auto">
-        <p className="text-[11px] uppercase tracking-[0.3em] text-white/20 mb-8 fade-in">
-          Root News
-        </p>
-
-        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-white leading-[1.12] tracking-[-0.02em] mb-6 fade-in-d1">
+        <h1 className="text-3xl sm:text-4xl lg:text-[3.25rem] font-bold text-white leading-[1.12] tracking-[-0.02em] mb-6 fade-in">
           The fastest way to read and understand the news
         </h1>
 
-        <p className="text-sm sm:text-[15px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed fade-in-d2">
+        <p className="text-sm sm:text-[15px] text-white/45 mb-10 max-w-md mx-auto leading-relaxed fade-in-d1">
           AI reads the news in real time, finds what actually matters, and gives
           you the key points in seconds.
         </p>
 
-        <div className="fade-in-d3">
+        <div className="fade-in-d2">
           <a
             href={APP_STORE_URL}
             target="_blank"
@@ -42,7 +44,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <p className="mt-8 text-[11px] text-white/15 fade-in-d4">
+        <p className="mt-8 text-[11px] text-white/15 fade-in-d3">
           Free forever &middot; No account required &middot; Pro available
         </p>
       </div>

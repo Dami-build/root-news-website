@@ -8,58 +8,49 @@ import ScrollAnimator from '@/components/AnimatedDivider'
 const APP_STORE_URL =
   'https://apps.apple.com/us/app/root-smart-news-summaries/id6748605459'
 
-const WAVEFORM_HEIGHTS = [
+const WAVEFORM = [
   40, 65, 35, 80, 50, 70, 45, 90, 55, 75, 38, 85, 60, 42, 78, 52, 68, 88, 46,
   72, 58, 82, 44, 76,
 ]
 
-const showcase = [
-  {
-    label: 'Summaries',
-    title: 'Every story, distilled',
-    description:
-      'AI analyzes thousands of articles in real time and delivers only what matters. Understand any story in 30 seconds.',
-    visual: 'summary',
-  },
-  {
-    label: 'Audio',
-    title: 'Your morning briefing',
-    description:
-      'A personalized daily audio briefing covering the categories you care about. Listen on your commute, at the gym, or over coffee.',
-    visual: 'audio',
-  },
-  {
-    label: 'Deep dives',
-    title: 'Go deeper with one tap',
-    description:
-      'Tap any preset - Quick Catch-up, Why This Matters, Full Context, Both Sides - and get an instant, beautifully structured deep dive.',
-    visual: 'presets',
-  },
+const CATEGORIES = [
+  'World',
+  'Technology',
+  'Finance',
+  'Health',
+  'Sports',
+  'Crypto',
+  'Politics',
+  'Science',
+  'Culture',
+  'Entertainment',
 ]
 
 function SummaryVisual() {
   return (
-    <div className="w-full max-w-[220px] mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5">
-      <div className="flex items-center gap-2 mb-4">
-        <div className="w-1.5 h-1.5 rounded-full bg-emerald-500/40" />
-        <div className="h-[3px] w-14 rounded-full bg-white/[0.08]" />
+    <div className="relative rounded-xl border border-white/[0.06] bg-[#0E0E1A] p-4 shadow-lg shadow-black/30 translate-y-4 max-w-[240px] mx-auto">
+      <div className="flex items-center gap-2 mb-3">
+        <div className="w-1.5 h-1.5 rounded-full bg-emerald-400/50" />
+        <div className="text-[10px] text-white/30">World News</div>
+        <div className="ml-auto text-[9px] text-white/15">2 min</div>
       </div>
-      <div className="space-y-2 mb-4">
-        <div className="h-[2px] w-full rounded-full bg-white/[0.06]" />
-        <div className="h-[2px] w-4/5 rounded-full bg-white/[0.04]" />
+      <div className="h-[3px] w-3/4 rounded-full bg-white/10 mb-2.5" />
+      <div className="space-y-1.5 mb-3">
+        <div className="h-[2px] w-full rounded-full bg-white/[0.05]" />
+        <div className="h-[2px] w-5/6 rounded-full bg-white/[0.04]" />
       </div>
       <div className="space-y-1.5">
         <div className="flex items-center gap-1.5">
-          <div className="w-[3px] h-[3px] rounded-full bg-[#DAA520]/40" />
-          <div className="h-[2px] flex-1 rounded-full bg-white/[0.04]" />
+          <div className="w-1 h-1 rounded-full bg-[#DAA520]/40" />
+          <div className="h-[2px] flex-1 rounded-full bg-[#DAA520]/[0.08]" />
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="w-[3px] h-[3px] rounded-full bg-[#DAA520]/40" />
-          <div className="h-[2px] w-4/5 rounded-full bg-white/[0.04]" />
+          <div className="w-1 h-1 rounded-full bg-[#DAA520]/40" />
+          <div className="h-[2px] w-4/5 rounded-full bg-[#DAA520]/[0.08]" />
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="w-[3px] h-[3px] rounded-full bg-[#DAA520]/40" />
-          <div className="h-[2px] w-3/5 rounded-full bg-white/[0.04]" />
+          <div className="w-1 h-1 rounded-full bg-[#DAA520]/40" />
+          <div className="h-[2px] w-3/5 rounded-full bg-[#DAA520]/[0.08]" />
         </div>
       </div>
     </div>
@@ -68,11 +59,11 @@ function SummaryVisual() {
 
 function AudioVisual() {
   return (
-    <div className="w-full max-w-[220px] mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5">
-      <div className="flex items-center gap-3 mb-5">
-        <div className="w-7 h-7 rounded-full bg-white/[0.06] flex items-center justify-center flex-shrink-0">
+    <div className="relative rounded-xl border border-white/[0.06] bg-[#0E0E1A] p-4 shadow-lg shadow-black/30 translate-y-4 max-w-[240px] mx-auto">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#5B6EF5]/20 to-[#9B59E8]/20 flex items-center justify-center flex-shrink-0 border border-white/[0.06]">
           <svg
-            className="w-2.5 h-2.5 text-white/40 ml-0.5"
+            className="w-3 h-3 text-white/50 ml-0.5"
             viewBox="0 0 24 24"
             fill="currentColor"
           >
@@ -80,18 +71,30 @@ function AudioVisual() {
           </svg>
         </div>
         <div>
-          <div className="text-[11px] text-white/50">Daily Briefing</div>
-          <div className="text-[9px] text-white/20">5 min</div>
+          <div className="text-[11px] text-white/50">Morning Briefing</div>
+          <div className="text-[9px] text-white/20">
+            5 min &middot; Your categories
+          </div>
         </div>
       </div>
-      <div className="flex items-end gap-[2px] h-7">
-        {WAVEFORM_HEIGHTS.map((h, i) => (
+      <div className="flex items-end gap-[2px] h-8">
+        {WAVEFORM.map((h, i) => (
           <div
             key={i}
-            className="flex-1 rounded-full bg-white/[0.08]"
-            style={{ height: `${h}%` }}
+            className="flex-1 rounded-full"
+            style={{
+              height: `${h}%`,
+              background:
+                i < 10
+                  ? 'rgba(91, 110, 245, 0.3)'
+                  : 'rgba(255, 255, 255, 0.06)',
+            }}
           />
         ))}
+      </div>
+      <div className="flex items-center justify-between mt-2">
+        <span className="text-[9px] text-white/15">1:42</span>
+        <span className="text-[9px] text-white/15">5:08</span>
       </div>
     </div>
   )
@@ -99,89 +102,214 @@ function AudioVisual() {
 
 function PresetsVisual() {
   const presets = [
-    'Quick Catch-up',
-    'Why This Matters',
-    'Full Context',
-    'Both Sides',
+    { name: 'Quick Catch-up', active: false },
+    { name: 'Why This Matters', active: true },
+    { name: 'Full Context', active: false },
+    { name: 'Both Sides', active: false },
   ]
   return (
-    <div className="w-full max-w-[220px] mx-auto rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5">
-      <div className="grid grid-cols-2 gap-2">
-        {presets.map((p, i) => (
-          <div
-            key={i}
-            className={`px-2.5 py-2 rounded-lg text-[10px] text-center ${
-              i === 1
-                ? 'border border-[#B8860B]/15 text-[#DAA520]/60 bg-[#B8860B]/[0.04]'
-                : 'border border-white/[0.05] text-white/25'
-            }`}
-          >
-            {p}
-          </div>
-        ))}
-      </div>
+    <div className="space-y-2 w-full max-w-[240px]">
+      {presets.map((p, i) => (
+        <div
+          key={i}
+          className={`px-4 py-2.5 rounded-xl text-[12px] transition-colors ${
+            p.active
+              ? 'border border-[#B8860B]/20 text-[#DAA520]/70 bg-[#B8860B]/[0.06]'
+              : 'border border-white/[0.06] text-white/25 bg-white/[0.02]'
+          }`}
+        >
+          {p.name}
+        </div>
+      ))}
     </div>
   )
 }
 
-const visuals: Record<string, () => JSX.Element> = {
-  summary: SummaryVisual,
-  audio: AudioVisual,
-  presets: PresetsVisual,
+function GradientLine() {
+  return (
+    <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <div
+        className="h-px"
+        style={{
+          background:
+            'linear-gradient(90deg, transparent, rgba(255,255,255,0.06), transparent)',
+        }}
+      />
+    </div>
+  )
 }
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative overflow-hidden" style={{ background: '#050508' }}>
+    <main
+      className="min-h-screen relative overflow-hidden"
+      style={{ background: '#0B0B15' }}
+    >
+      {/* Background layers */}
+      <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
+        {/* Dot grid */}
+        <div
+          className="absolute inset-0 opacity-100"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(255,255,255,0.035) 1px, transparent 1px)',
+            backgroundSize: '32px 32px',
+          }}
+        />
+        {/* Color washes */}
+        <div
+          className="absolute -top-[200px] right-0 w-[900px] h-[900px]"
+          style={{
+            background:
+              'radial-gradient(circle at 70% 30%, rgba(91,110,245,0.045) 0%, transparent 50%)',
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-0 w-[700px] h-[700px]"
+          style={{
+            background:
+              'radial-gradient(circle at 30% 70%, rgba(41,217,165,0.03) 0%, transparent 50%)',
+          }}
+        />
+        <div
+          className="absolute top-[40%] left-[60%] w-[500px] h-[500px]"
+          style={{
+            background:
+              'radial-gradient(circle, rgba(155,89,232,0.025) 0%, transparent 50%)',
+          }}
+        />
+      </div>
+
       <div className="relative z-10">
         <Header />
         <Hero />
 
+        {/* Category ticker */}
+        <div
+          className="py-6 overflow-hidden relative"
+          aria-hidden="true"
+        >
+          <div
+            className="absolute left-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
+            style={{
+              background: 'linear-gradient(to right, #0B0B15, transparent)',
+            }}
+          />
+          <div
+            className="absolute right-0 top-0 bottom-0 w-32 z-10 pointer-events-none"
+            style={{
+              background: 'linear-gradient(to left, #0B0B15, transparent)',
+            }}
+          />
+          <div className="flex animate-ticker">
+            {[0, 1].map((g) => (
+              <div key={g} className="flex items-center shrink-0">
+                {CATEGORIES.map((cat, i) => (
+                  <span
+                    key={i}
+                    className="text-[11px] text-white/[0.10] uppercase tracking-[0.15em] px-6 shrink-0"
+                  >
+                    {cat}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <Features />
 
+        <GradientLine />
+
+        {/* Bento feature showcase */}
         <section className="py-28 px-4 sm:px-6">
-          <div className="max-w-5xl mx-auto space-y-28">
-            {showcase.map((item, i) => {
-              const Visual = visuals[item.visual]
-              const reversed = i % 2 === 1
-              return (
-                <div
-                  key={i}
-                  className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center"
-                  data-animate
-                >
-                  <div className={reversed ? 'lg:order-2' : ''}>
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-white/20 mb-4">
-                      {item.label}
+          <div className="max-w-5xl mx-auto">
+            <p
+              className="text-[11px] uppercase tracking-[0.2em] text-white/20 mb-8"
+              data-animate
+            >
+              Features
+            </p>
+
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-4"
+              data-animate
+              data-animate-delay="1"
+            >
+              {/* Summaries card */}
+              <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 pb-0 overflow-hidden relative shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:border-white/[0.10] transition-colors">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent" />
+                <p className="text-[11px] uppercase tracking-[0.2em] text-emerald-400/30 mb-3">
+                  Summaries
+                </p>
+                <h3 className="text-base font-medium text-white mb-2">
+                  Every story, distilled
+                </h3>
+                <p className="text-[13px] text-white/40 leading-relaxed mb-6">
+                  AI analyzes thousands of articles in real time and delivers
+                  only what matters. Understand any story in 30 seconds.
+                </p>
+                <SummaryVisual />
+              </div>
+
+              {/* Audio card */}
+              <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 pb-0 overflow-hidden relative shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:border-white/[0.10] transition-colors">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#5B6EF5]/20 to-transparent" />
+                <p className="text-[11px] uppercase tracking-[0.2em] text-[#5B6EF5]/30 mb-3">
+                  Audio
+                </p>
+                <h3 className="text-base font-medium text-white mb-2">
+                  Your morning briefing
+                </h3>
+                <p className="text-[13px] text-white/40 leading-relaxed mb-6">
+                  A personalized daily audio briefing covering the categories
+                  you care about. Listen on your commute, at the gym, or over
+                  coffee.
+                </p>
+                <AudioVisual />
+              </div>
+
+              {/* Deep dives card - full width */}
+              <div className="md:col-span-2 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 overflow-hidden relative shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] hover:border-white/[0.10] transition-colors">
+                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#B8860B]/20 to-transparent" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <p className="text-[11px] uppercase tracking-[0.2em] text-[#B8860B]/30 mb-3">
+                      Deep dives
                     </p>
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 tracking-[-0.01em]">
-                      {item.title}
+                    <h3 className="text-base font-medium text-white mb-2">
+                      Go deeper with one tap
                     </h3>
-                    <p className="text-[13px] text-white/35 leading-relaxed max-w-sm">
-                      {item.description}
+                    <p className="text-[13px] text-white/40 leading-relaxed">
+                      Tap any preset - Quick Catch-up, Why This Matters, Full
+                      Context, Both Sides - and get an instant, beautifully
+                      structured deep dive.
                     </p>
                   </div>
-                  <div
-                    className={`flex justify-center ${
-                      reversed ? 'lg:order-1' : ''
-                    }`}
-                  >
-                    <Visual />
+                  <div className="flex justify-center">
+                    <PresetsVisual />
                   </div>
                 </div>
-              )
-            })}
+              </div>
+            </div>
           </div>
         </section>
 
+        <GradientLine />
+
         <AppShowcase />
 
-        <section className="py-28 px-4 sm:px-6 text-center">
-          <div className="max-w-lg mx-auto" data-animate>
+        {/* CTA */}
+        <section className="py-28 px-4 sm:px-6 text-center relative">
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[200px] rounded-full blur-[120px] pointer-events-none"
+            style={{ background: 'rgba(184, 134, 11, 0.04)' }}
+          />
+          <div className="relative z-10 max-w-lg mx-auto" data-animate>
             <h2 className="text-xl sm:text-2xl font-semibold text-white tracking-[-0.01em] mb-4">
               The only news app you need
             </h2>
-            <p className="text-[13px] text-white/35 mb-8 max-w-sm mx-auto leading-relaxed">
+            <p className="text-[13px] text-white/40 mb-8 max-w-sm mx-auto leading-relaxed">
               Join thousands of readers who get their news in minutes, not
               hours.
             </p>

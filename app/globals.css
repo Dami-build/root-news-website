@@ -102,6 +102,11 @@
     animation: fadeIn 0.7s cubic-bezier(0.25, 0.1, 0.25, 1) 0.48s forwards;
   }
 
+  /* Category ticker */
+  .animate-ticker {
+    animation: ticker 40s linear infinite;
+  }
+
   /* Legacy support for other pages */
   .gradient-text {
     @apply bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-transparent;
@@ -143,6 +148,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes heroGlow {
+  0%, 100% { opacity: 0.06; }
+  50% { opacity: 0.10; }
 }
 
 @keyframes gradientBG {
