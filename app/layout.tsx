@@ -1,9 +1,19 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Instrument_Serif } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+})
 
 export const metadata: Metadata = {
   title: 'Root News - The News, Simplified',
@@ -73,9 +83,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className={`scroll-smooth ${inter.variable} ${instrumentSerif.variable}`}
+    >
       <head />
-      <body className={`${inter.className} antialiased`}>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>
