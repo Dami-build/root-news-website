@@ -13,13 +13,6 @@ const WAVEFORM = [
   76, 62, 80, 48, 72, 56, 68, 42, 64, 36, 58,
 ]
 
-const stats = [
-  { value: '100+', label: 'Trusted sources', sub: 'Worldwide' },
-  { value: '10', label: 'News categories', sub: 'World to crypto' },
-  { value: '5m', label: 'Daily read', sub: 'Fully informed' },
-  { value: '0', label: 'Ads, ever', sub: 'No exceptions' },
-]
-
 function SummaryCardMini() {
   return (
     <div className="rounded-xl border border-white/[0.06] bg-[#0E0E1A] p-4">
@@ -220,27 +213,6 @@ export default function Home() {
         <Header />
         <Hero />
 
-        {/* Stats band */}
-        <section className="py-10 px-4 sm:px-6" data-animate>
-          <div className="max-w-5xl mx-auto">
-            <div className="rounded-2xl border border-white/[0.06] bg-white/[0.015] shadow-[inset_0_1px_0_rgba(255,255,255,0.03)] divide-y sm:divide-y-0 sm:divide-x divide-white/[0.05] grid grid-cols-2 sm:grid-cols-4 overflow-hidden">
-              {stats.map((s, i) => (
-                <div key={i} className="p-6 text-center">
-                  <div className="font-serif text-4xl sm:text-5xl text-white/95 leading-none tracking-[-0.02em]">
-                    {s.value}
-                  </div>
-                  <div className="mt-2 text-[11px] text-white/50 font-medium">
-                    {s.label}
-                  </div>
-                  <div className="text-[10px] text-white/25 mt-0.5">
-                    {s.sub}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         <Features />
 
         <GradientLine />
@@ -395,13 +367,13 @@ export default function Home() {
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] rounded-full blur-[140px] pointer-events-none"
             style={{ background: 'rgba(184, 134, 11, 0.08)' }}
           />
-          <div className="relative z-10 max-w-xl mx-auto" data-animate>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white tracking-[-0.02em] leading-tight mb-5">
-              5 minutes a day.
-              <br />
+          <div className="relative z-10 max-w-2xl mx-auto" data-animate>
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[3.25rem] text-white tracking-[-0.02em] leading-[1.1] mb-6">
+              Understand the news in under{' '}
               <em className="text-[#DAA520] not-italic font-serif italic">
-                Fully informed.
+                5 minutes a day
               </em>
+              .
             </h2>
             <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
               Free to download. No account required. Pro available when

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ScrollAnimator from '@/components/AnimatedDivider'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - Root News',
@@ -9,207 +10,508 @@ export const metadata: Metadata = {
 
 export default function Privacy() {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        <div className="bg-white rounded-2xl p-8 md:p-12 border border-gray-200 shadow-sm">
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy for Root News</h1>
-          
-          <div className="space-y-8 text-gray-700">
-            <div className="text-sm text-gray-500">
-              <p><strong>Effective Date:</strong> April 13, 2026</p>
-              <p><strong>Last Updated:</strong> April 13, 2026</p>
+    <main
+      className="min-h-screen relative overflow-hidden"
+      style={{ background: '#0B0B15' }}
+    >
+      <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              'radial-gradient(circle, rgba(255,255,255,0.03) 1px, transparent 1px)',
+            backgroundSize: '36px 36px',
+          }}
+        />
+        <div
+          className="absolute -top-[200px] right-0 w-[900px] h-[900px]"
+          style={{
+            background:
+              'radial-gradient(circle at 70% 30%, rgba(184,134,11,0.05) 0%, transparent 55%)',
+          }}
+        />
+      </div>
+
+      <div className="relative z-10">
+        <Header />
+
+        <article className="pt-32 sm:pt-36 pb-20 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="mb-14 text-center">
+              <p className="text-[11px] uppercase tracking-[0.3em] text-white/25 mb-4">
+                Legal
+              </p>
+              <h1 className="font-serif text-4xl sm:text-5xl text-white tracking-[-0.02em] leading-[1.05] mb-6">
+                Privacy Policy
+              </h1>
+              <div className="inline-flex items-center gap-6 text-[11px] text-white/35">
+                <span>
+                  Effective{' '}
+                  <span className="text-white/60">April 13, 2026</span>
+                </span>
+                <span className="text-white/15">&middot;</span>
+                <span>
+                  Updated{' '}
+                  <span className="text-white/60">April 13, 2026</span>
+                </span>
+              </div>
             </div>
 
-            <section>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
-              <p className="mb-4 text-sm">
-                Root Labs OÜ ("we," "our," or "us") operates the Root News mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
-              </p>
-            </section>
+            <div className="space-y-14 text-[14px] text-white/65 leading-[1.75]">
+              <Section num="01" title="Introduction">
+                <p>
+                  Root Labs OÜ (&quot;we,&quot; &quot;our,&quot; or
+                  &quot;us&quot;) operates the Root News mobile application (the
+                  &quot;Service&quot;). This Privacy Policy explains how we
+                  collect, use, disclose, and safeguard your information when
+                  you use our Service.
+                </p>
+              </Section>
 
-            <section>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">2. Information We Collect</h2>
-              
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.1 Account Information</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>Anonymous Accounts</strong>: We create temporary anonymous accounts during onboarding to provide immediate access to our service</li>
-                <li><strong>Email and Password</strong>: If you choose to create a permanent account or upgrade from anonymous</li>
-                <li><strong>Apple ID Information</strong>: If you sign in with Apple, we receive your Apple ID, email (if shared), and name (if shared)</li>
-                <li><strong>Display Name</strong>: User-provided name for account personalization</li>
-              </ul>
+              <Section num="02" title="Information We Collect">
+                <SubHeading>2.1 Account Information</SubHeading>
+                <List>
+                  <li>
+                    <Strong>Anonymous Accounts</Strong>: We create temporary
+                    anonymous accounts during onboarding to provide immediate
+                    access to our service
+                  </li>
+                  <li>
+                    <Strong>Email and Password</Strong>: If you choose to create
+                    a permanent account or upgrade from anonymous
+                  </li>
+                  <li>
+                    <Strong>Apple ID Information</Strong>: If you sign in with
+                    Apple, we receive your Apple ID, email (if shared), and
+                    name (if shared)
+                  </li>
+                  <li>
+                    <Strong>Display Name</Strong>: User-provided name for
+                    account personalization
+                  </li>
+                </List>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.2 Usage Information</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>News Preferences</strong>: Categories you mark as favorites</li>
-                <li><strong>Notification Settings</strong>: Your daily reminder preferences and timing</li>
-                <li><strong>Subscription Information</strong>: Subscription type (Monthly/Annual) and status</li>
-                <li><strong>App Usage</strong>: Basic app functionality usage for service improvement</li>
-                <li><strong>Daily Briefing Interactions</strong>: Categories selected and audio briefing plays</li>
-                <li><strong>Deep Dive Usage</strong>: Feature usage count and patterns</li>
-                <li><strong>In-App Review Responses</strong>: Responses to in-app review prompts</li>
-              </ul>
+                <SubHeading>2.2 Usage Information</SubHeading>
+                <List>
+                  <li>
+                    <Strong>News Preferences</Strong>: Categories you mark as
+                    favorites
+                  </li>
+                  <li>
+                    <Strong>Notification Settings</Strong>: Your daily reminder
+                    preferences and timing
+                  </li>
+                  <li>
+                    <Strong>Subscription Information</Strong>: Subscription
+                    type (Monthly/Annual) and status
+                  </li>
+                  <li>
+                    <Strong>App Usage</Strong>: Basic app functionality usage
+                    for service improvement
+                  </li>
+                  <li>
+                    <Strong>Daily Briefing Interactions</Strong>: Categories
+                    selected and audio briefing plays
+                  </li>
+                  <li>
+                    <Strong>Deep Dive Usage</Strong>: Feature usage count and
+                    patterns
+                  </li>
+                  <li>
+                    <Strong>In-App Review Responses</Strong>: Responses to
+                    in-app review prompts
+                  </li>
+                </List>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.3 Device Information</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>Device Type</strong>: To optimize app performance</li>
-                <li><strong>Push Notification Tokens</strong>: To deliver daily news reminders (only if enabled)</li>
-                <li><strong>Platform Information</strong>: iOS version and device capabilities</li>
-              </ul>
+                <SubHeading>2.3 Device Information</SubHeading>
+                <List>
+                  <li>
+                    <Strong>Device Type</Strong>: To optimize app performance
+                  </li>
+                  <li>
+                    <Strong>Push Notification Tokens</Strong>: To deliver daily
+                    news reminders (only if enabled)
+                  </li>
+                  <li>
+                    <Strong>Platform Information</Strong>: iOS version and
+                    device capabilities
+                  </li>
+                </List>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">2.4 AI Interaction Data</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>Deep Dive Interactions</strong>: Your use of deep dive features such as Quick Catch-up, Why This Matters, Full Context, and Both Sides. These interactions are processed by our AI providers and are not stored long-term by Root News.</li>
-                <li><strong>Daily Briefing Preferences</strong>: Your selected news categories and preferred voice for audio briefings, stored locally on your device</li>
-                <li><strong>Audio Briefing Requests</strong>: Requests to generate audio versions of your Daily Briefing</li>
-              </ul>
-            </section>
+                <SubHeading>2.4 AI Interaction Data</SubHeading>
+                <List>
+                  <li>
+                    <Strong>Deep Dive Interactions</Strong>: Your use of deep
+                    dive features such as Quick Catch-up, Why This Matters,
+                    Full Context, and Both Sides. These interactions are
+                    processed by our AI providers and are not stored long-term
+                    by Root News.
+                  </li>
+                  <li>
+                    <Strong>Daily Briefing Preferences</Strong>: Your selected
+                    news categories and preferred voice for audio briefings,
+                    stored locally on your device
+                  </li>
+                  <li>
+                    <Strong>Audio Briefing Requests</Strong>: Requests to
+                    generate audio versions of your Daily Briefing
+                  </li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">3. How We Use Your Information</h2>
-              <p className="mb-3 text-sm">We use your information to:</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>Provide Service</strong>: Deliver personalized news content and maintain your account</li>
-                <li><strong>Process Payments</strong>: Handle subscription billing through Apple App Store</li>
-                <li><strong>Send Notifications</strong>: Deliver daily news summaries and app updates (with your consent)</li>
-                <li><strong>Improve Service</strong>: Analyze usage patterns to enhance user experience</li>
-                <li><strong>Customer Support</strong>: Respond to your inquiries and resolve issues</li>
-                <li><strong>Legal Compliance</strong>: Meet legal obligations and protect our rights</li>
-              </ul>
-            </section>
+              <Section num="03" title="How We Use Your Information">
+                <p className="mb-4">We use your information to:</p>
+                <List>
+                  <li>
+                    <Strong>Provide Service</Strong>: Deliver personalized news
+                    content and maintain your account
+                  </li>
+                  <li>
+                    <Strong>Process Payments</Strong>: Handle subscription
+                    billing through Apple App Store
+                  </li>
+                  <li>
+                    <Strong>Send Notifications</Strong>: Deliver daily news
+                    summaries and app updates (with your consent)
+                  </li>
+                  <li>
+                    <Strong>Improve Service</Strong>: Analyze usage patterns to
+                    enhance user experience
+                  </li>
+                  <li>
+                    <Strong>Customer Support</Strong>: Respond to your
+                    inquiries and resolve issues
+                  </li>
+                  <li>
+                    <Strong>Legal Compliance</Strong>: Meet legal obligations
+                    and protect our rights
+                  </li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Information Sharing and Disclosure</h2>
-              <p className="mb-3 text-sm">We do not sell, trade, or rent your personal information. We may share information only in these limited circumstances:</p>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>Apple App Store</strong>: Subscription and payment processing</li>
-                <li><strong>Legal Requirements</strong>: When required by law, court order, or to protect our rights</li>
-                <li><strong>Business Transfers</strong>: In connection with a merger, acquisition, or sale of assets (with user notification)</li>
-                <li><strong>Consent</strong>: When you explicitly agree to sharing</li>
-              </ul>
+              <Section num="04" title="Information Sharing and Disclosure">
+                <p className="mb-4">
+                  We do not sell, trade, or rent your personal information. We
+                  may share information only in these limited circumstances:
+                </p>
+                <List>
+                  <li>
+                    <Strong>Apple App Store</Strong>: Subscription and payment
+                    processing
+                  </li>
+                  <li>
+                    <Strong>Legal Requirements</Strong>: When required by law,
+                    court order, or to protect our rights
+                  </li>
+                  <li>
+                    <Strong>Business Transfers</Strong>: In connection with a
+                    merger, acquisition, or sale of assets (with user
+                    notification)
+                  </li>
+                  <li>
+                    <Strong>Consent</Strong>: When you explicitly agree to
+                    sharing
+                  </li>
+                </List>
 
-              <p className="mb-3 text-sm font-semibold">We use the following third-party service providers:</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>AI Processing Providers</strong>: Third-party AI services process news summaries, deep dive responses, and text-to-speech audio for Daily Briefings. Article context may be sent to these providers for processing. Their respective data usage policies apply.</li>
-                <li><strong>Mixpanel</strong>: Analytics platform used to understand app usage, retention, and feature engagement. Collects anonymized usage events.</li>
-                <li><strong>AppsFlyer</strong>: Mobile attribution and marketing analytics. Collects device-level attribution data subject to Apple's App Tracking Transparency framework.</li>
-                <li><strong>Superwall</strong>: Paywall and subscription management. Handles paywall presentation and conversion tracking.</li>
-                <li><strong>Supabase</strong>: Cloud database hosting for user accounts and content storage.</li>
-              </ul>
-            </section>
+                <p className="mt-6 mb-4 text-white/80 font-medium">
+                  We use the following third-party service providers:
+                </p>
+                <List>
+                  <li>
+                    <Strong>AI Processing Providers</Strong>: Third-party AI
+                    services process news summaries, deep dive responses, and
+                    text-to-speech audio for Daily Briefings. Article context
+                    may be sent to these providers for processing. Their
+                    respective data usage policies apply.
+                  </li>
+                  <li>
+                    <Strong>Mixpanel</Strong>: Analytics platform used to
+                    understand app usage, retention, and feature engagement.
+                    Collects anonymized usage events.
+                  </li>
+                  <li>
+                    <Strong>AppsFlyer</Strong>: Mobile attribution and
+                    marketing analytics. Collects device-level attribution
+                    data subject to Apple&apos;s App Tracking Transparency
+                    framework.
+                  </li>
+                  <li>
+                    <Strong>Superwall</Strong>: Paywall and subscription
+                    management. Handles paywall presentation and conversion
+                    tracking.
+                  </li>
+                  <li>
+                    <Strong>Supabase</Strong>: Cloud database hosting for user
+                    accounts and content storage.
+                  </li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Data Storage and Security</h2>
-              
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">5.1 Data Storage</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>Location</strong>: Data stored on secure servers in the United States</li>
-                <li><strong>Duration</strong>: Account data retained while account is active</li>
-                <li><strong>Deletion</strong>: Data deleted within 30 days of account deletion request</li>
-                <li><strong>Anonymous Accounts</strong>: Automatically deleted after 30 days of inactivity</li>
-              </ul>
+              <Section num="05" title="Data Storage and Security">
+                <SubHeading>5.1 Data Storage</SubHeading>
+                <List>
+                  <li>
+                    <Strong>Location</Strong>: Data stored on secure servers in
+                    the United States
+                  </li>
+                  <li>
+                    <Strong>Duration</Strong>: Account data retained while
+                    account is active
+                  </li>
+                  <li>
+                    <Strong>Deletion</Strong>: Data deleted within 30 days of
+                    account deletion request
+                  </li>
+                  <li>
+                    <Strong>Anonymous Accounts</Strong>: Automatically deleted
+                    after 30 days of inactivity
+                  </li>
+                </List>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">5.2 Security Measures</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Industry-standard encryption for data transmission and storage</li>
-                <li>Regular security audits and updates</li>
-                <li>Limited access to personal data on need-to-know basis</li>
-                <li>Secure authentication systems</li>
-              </ul>
-            </section>
+                <SubHeading>5.2 Security Measures</SubHeading>
+                <List>
+                  <li>
+                    Industry-standard encryption for data transmission and
+                    storage
+                  </li>
+                  <li>Regular security audits and updates</li>
+                  <li>
+                    Limited access to personal data on need-to-know basis
+                  </li>
+                  <li>Secure authentication systems</li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Your Rights and Choices</h2>
-              
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">6.1 Account Management</h3>
-              <ul className="list-disc list-inside space-y-2 mb-6 text-sm">
-                <li><strong>Access</strong>: View your account information in app settings</li>
-                <li><strong>Update</strong>: Modify your preferences and account details</li>
-                <li><strong>Delete</strong>: Request account deletion through app or email</li>
-                <li><strong>Export</strong>: Request a copy of your data</li>
-              </ul>
+              <Section num="06" title="Your Rights and Choices">
+                <SubHeading>6.1 Account Management</SubHeading>
+                <List>
+                  <li>
+                    <Strong>Access</Strong>: View your account information in
+                    app settings
+                  </li>
+                  <li>
+                    <Strong>Update</Strong>: Modify your preferences and
+                    account details
+                  </li>
+                  <li>
+                    <Strong>Delete</Strong>: Request account deletion through
+                    app or email
+                  </li>
+                  <li>
+                    <Strong>Export</Strong>: Request a copy of your data
+                  </li>
+                </List>
 
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">6.2 Communication Preferences</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Control push notification settings in app</li>
-                <li>Unsubscribe from email communications</li>
-                <li>Adjust daily summary timing and frequency</li>
-              </ul>
-            </section>
+                <SubHeading>6.2 Communication Preferences</SubHeading>
+                <List>
+                  <li>Control push notification settings in app</li>
+                  <li>Unsubscribe from email communications</li>
+                  <li>Adjust daily summary timing and frequency</li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Children's Privacy</h2>
-              <p className="text-sm">Root News is not intended for children under 13. We do not knowingly collect personal information from children under 13. If we discover such information, we will delete it immediately.</p>
-            </section>
+              <Section num="07" title="Children's Privacy">
+                <p>
+                  Root News is not intended for children under 13. We do not
+                  knowingly collect personal information from children under
+                  13. If we discover such information, we will delete it
+                  immediately.
+                </p>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. International Data Transfers</h2>
-              <p className="text-sm">Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for international transfers.</p>
-            </section>
+              <Section num="08" title="International Data Transfers">
+                <p>
+                  Your information may be transferred to and processed in
+                  countries other than your own. We ensure appropriate
+                  safeguards are in place for international transfers.
+                </p>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Analytics and Tracking</h2>
-              <p className="mb-3 text-sm">We use analytics tools to understand how our app is used and to improve the Service. We do not serve third-party advertisements.</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>Mixpanel</strong>: We use Mixpanel for product analytics, including feature engagement, retention, and usage patterns. Data collected by Mixpanel is anonymized.</li>
-                <li><strong>AppsFlyer</strong>: We use AppsFlyer for mobile attribution and marketing analytics. AppsFlyer respects Apple's App Tracking Transparency (ATT) framework, and attribution data is only collected with your consent where required.</li>
-                <li><strong>Superwall</strong>: We use Superwall for paywall analytics and subscription conversion tracking.</li>
-              </ul>
-            </section>
+              <Section num="09" title="Analytics and Tracking">
+                <p className="mb-4">
+                  We use analytics tools to understand how our app is used and
+                  to improve the Service. We do not serve third-party
+                  advertisements.
+                </p>
+                <List>
+                  <li>
+                    <Strong>Mixpanel</Strong>: We use Mixpanel for product
+                    analytics, including feature engagement, retention, and
+                    usage patterns. Data collected by Mixpanel is anonymized.
+                  </li>
+                  <li>
+                    <Strong>AppsFlyer</Strong>: We use AppsFlyer for mobile
+                    attribution and marketing analytics. AppsFlyer respects
+                    Apple&apos;s App Tracking Transparency (ATT) framework, and
+                    attribution data is only collected with your consent where
+                    required.
+                  </li>
+                  <li>
+                    <Strong>Superwall</Strong>: We use Superwall for paywall
+                    analytics and subscription conversion tracking.
+                  </li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. AI Data Processing</h2>
-              <p className="mb-3 text-sm">Root News uses artificial intelligence to generate content and provide features throughout the app:</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li><strong>News Summaries and Deep Dives</strong>: Article summaries and in-depth analyses are generated using AI based on content from trusted news sources.</li>
-                <li><strong>Deep Dive Features</strong>: Preset deep dives (Quick Catch-up, Why This Matters, Full Context, Both Sides) are processed by our AI providers. Root News does not permanently store your deep dive interactions.</li>
-                <li><strong>Daily Briefings</strong>: Personalized text briefings are generated using AI from the day's top stories in your selected categories.</li>
-                <li><strong>Audio Briefings</strong>: Audio versions of Daily Briefings are generated server-side using AI text-to-speech technology and streamed to your device.</li>
-                <li><strong>Accuracy</strong>: AI-generated outputs may contain inaccuracies. Users should verify important information with original sources.</li>
-              </ul>
-            </section>
+              <Section num="10" title="AI Data Processing">
+                <p className="mb-4">
+                  Root News uses artificial intelligence to generate content
+                  and provide features throughout the app:
+                </p>
+                <List>
+                  <li>
+                    <Strong>News Summaries and Deep Dives</Strong>: Article
+                    summaries and in-depth analyses are generated using AI
+                    based on content from trusted news sources.
+                  </li>
+                  <li>
+                    <Strong>Deep Dive Features</Strong>: Preset deep dives
+                    (Quick Catch-up, Why This Matters, Full Context, Both
+                    Sides) are processed by our AI providers. Root News does
+                    not permanently store your deep dive interactions.
+                  </li>
+                  <li>
+                    <Strong>Daily Briefings</Strong>: Personalized text
+                    briefings are generated using AI from the day&apos;s top
+                    stories in your selected categories.
+                  </li>
+                  <li>
+                    <Strong>Audio Briefings</Strong>: Audio versions of Daily
+                    Briefings are generated server-side using AI text-to-speech
+                    technology and streamed to your device.
+                  </li>
+                  <li>
+                    <Strong>Accuracy</Strong>: AI-generated outputs may contain
+                    inaccuracies. Users should verify important information
+                    with original sources.
+                  </li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">11. Changes to This Privacy Policy</h2>
-              <p className="mb-3 text-sm">We may update this Privacy Policy periodically. We will notify you of material changes through:</p>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>In-app notifications</li>
-                <li>Email notifications (if provided)</li>
-                <li>Updated policy posted on our website</li>
-              </ul>
-            </section>
+              <Section num="11" title="Changes to This Privacy Policy">
+                <p className="mb-4">
+                  We may update this Privacy Policy periodically. We will
+                  notify you of material changes through:
+                </p>
+                <List>
+                  <li>In-app notifications</li>
+                  <li>Email notifications (if provided)</li>
+                  <li>Updated policy posted on our website</li>
+                </List>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">12. Contact Us</h2>
-              <p className="mb-3 text-sm">If you have questions about this Privacy Policy, please contact us:</p>
-              <div className="bg-gray-100 p-4 rounded-lg">
-                <ul className="list-disc list-inside space-y-1 text-gray-900">
-                  <li><strong>Email</strong>: support@rootnews.app</li>
-                  <li><strong>Website</strong>: https://rootnews.app</li>
-                  <li><strong>Address</strong>: Harju County, Tallinn, Lasnamäe District, Sepapaja Street 6, 15551</li>
-                </ul>
-              </div>
-            </section>
+              <Section num="12" title="Contact Us">
+                <p className="mb-5">
+                  If you have questions about this Privacy Policy, please
+                  contact us:
+                </p>
+                <InfoBox>
+                  <li>
+                    <Strong>Email</Strong>: support@rootnews.app
+                  </li>
+                  <li>
+                    <Strong>Website</Strong>: https://rootnews.app
+                  </li>
+                  <li>
+                    <Strong>Address</Strong>: Harju County, Tallinn, Lasnamäe
+                    District, Sepapaja Street 6, 15551
+                  </li>
+                </InfoBox>
+              </Section>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">13. Legal Basis for Processing (GDPR)</h2>
-              <p className="mb-3 text-sm">For users in the European Union, our legal basis for processing personal information includes:</p>
-              <ul className="list-disc list-inside space-y-2 mb-4 text-sm">
-                <li><strong>Contract Performance</strong>: To provide the Root News service you've subscribed to</li>
-                <li><strong>Legitimate Interest</strong>: To improve our service and provide customer support</li>
-                <li><strong>Consent</strong>: For optional features like push notifications</li>
-                <li><strong>Legal Obligation</strong>: To comply with applicable laws and regulations</li>
-              </ul>
-              <p className="text-sm">You have the right to withdraw consent, request data portability, and lodge complaints with supervisory authorities under GDPR.</p>
-            </section>
+              <Section num="13" title="Legal Basis for Processing (GDPR)">
+                <p className="mb-4">
+                  For users in the European Union, our legal basis for
+                  processing personal information includes:
+                </p>
+                <List>
+                  <li>
+                    <Strong>Contract Performance</Strong>: To provide the Root
+                    News service you&apos;ve subscribed to
+                  </li>
+                  <li>
+                    <Strong>Legitimate Interest</Strong>: To improve our
+                    service and provide customer support
+                  </li>
+                  <li>
+                    <Strong>Consent</Strong>: For optional features like push
+                    notifications
+                  </li>
+                  <li>
+                    <Strong>Legal Obligation</Strong>: To comply with
+                    applicable laws and regulations
+                  </li>
+                </List>
+                <p className="mt-4">
+                  You have the right to withdraw consent, request data
+                  portability, and lodge complaints with supervisory
+                  authorities under GDPR.
+                </p>
+              </Section>
+            </div>
 
-            <div className="border-t border-gray-200 pt-8 mt-12">
-              <p className="text-sm text-gray-600 italic text-center">
-                This Privacy Policy is effective as of April 13, 2026 and was last updated on April 13, 2026.
+            <div className="mt-20 pt-10 border-t border-white/[0.06] text-center">
+              <p className="font-serif italic text-[15px] text-white/35">
+                This Privacy Policy is effective as of April 13, 2026 and was
+                last updated on April 13, 2026.
               </p>
             </div>
           </div>
-        </div>
+        </article>
+
+        <Footer />
       </div>
+
+      <ScrollAnimator />
+    </main>
+  )
+}
+
+function Section({
+  num,
+  title,
+  children,
+}: {
+  num: string
+  title: string
+  children: React.ReactNode
+}) {
+  return (
+    <section className="relative" data-animate>
+      <div className="flex items-baseline gap-4 mb-6">
+        <span className="text-[11px] font-mono text-[#DAA520]/60 tracking-[0.1em]">
+          {num}
+        </span>
+        <h2 className="font-serif text-2xl sm:text-[1.75rem] text-white tracking-[-0.01em] leading-tight">
+          {title}
+        </h2>
+      </div>
+      <div className="pl-0 sm:pl-12">{children}</div>
+    </section>
+  )
+}
+
+function SubHeading({ children }: { children: React.ReactNode }) {
+  return (
+    <h3 className="text-[13px] font-semibold text-white/85 uppercase tracking-[0.12em] mt-6 mb-3 first:mt-0">
+      {children}
+    </h3>
+  )
+}
+
+function List({ children }: { children: React.ReactNode }) {
+  return <ul className="bullet-list space-y-2.5 text-[13.5px]">{children}</ul>
+}
+
+function Strong({ children }: { children: React.ReactNode }) {
+  return <strong className="text-white/90 font-medium">{children}</strong>
+}
+
+function InfoBox({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="rounded-xl border border-white/[0.08] bg-white/[0.02] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.03)]">
+      <ul className="bullet-list space-y-2 text-[13.5px]">{children}</ul>
     </div>
   )
 }

@@ -60,7 +60,7 @@ export default function Hero() {
           it as clear, unbiased summaries - in seconds.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 fade-in-d3">
+        <div className="mt-10 fade-in-d3">
           <a
             href={APP_STORE_URL}
             target="_blank"
@@ -72,9 +72,6 @@ export default function Hero() {
             </svg>
             Download for iOS
           </a>
-          <span className="text-[11px] text-white/30">
-            Free forever &middot; No account required
-          </span>
         </div>
       </div>
 
@@ -126,20 +123,11 @@ export default function Hero() {
               </li>
             </ul>
 
-            <div className="flex items-center justify-between pt-4 border-t border-white/[0.06]">
-              <div className="flex items-center gap-1.5">
-                <span className="text-[10px] text-white/40">Reuters</span>
-                <span className="text-white/15 text-[10px]">&middot;</span>
-                <span className="text-[10px] text-white/40">BBC</span>
-                <span className="text-white/15 text-[10px]">&middot;</span>
-                <span className="text-[10px] text-white/40">AP</span>
-                <span className="text-white/15 text-[10px]">&middot;</span>
-                <span className="text-[10px] text-white/30">+47 more</span>
-              </div>
-              <button className="text-[10px] text-[#DAA520]/80 hover:text-[#DAA520] transition-colors flex items-center gap-1">
+            <div className="flex items-center justify-end pt-4 border-t border-white/[0.06]">
+              <button className="text-[11px] text-[#DAA520]/80 hover:text-[#DAA520] transition-colors flex items-center gap-1.5">
                 Deep dive
                 <svg
-                  className="w-2.5 h-2.5"
+                  className="w-3 h-3"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

@@ -1,83 +1,57 @@
 'use client'
 
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 const APP_STORE_URL =
   'https://apps.apple.com/us/app/root-smart-news-summaries/id6748605459'
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0B0B15]/80 backdrop-blur-xl border-b border-white/[0.04]">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center h-14">
-          <a href="/" className="flex items-center">
-            <img src="/root-logo.png" alt="Root News" className="w-9 h-9" />
-          </a>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-[#0B0B15]/85 backdrop-blur-xl border-b border-white/[0.05]'
+          : 'bg-transparent border-b border-transparent'
+      }`}
+    >
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-center">
+        <span className="hidden sm:block absolute left-4 sm:left-6 text-[10px] uppercase tracking-[0.25em] text-white/20">
+          Est. 2025
+        </span>
 
-          <nav className="hidden md:flex items-center gap-6">
-            <a
-              href="#features"
-              className="text-[13px] text-white/30 hover:text-white/70 transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#pro"
-              className="text-[13px] text-white/30 hover:text-white/70 transition-colors"
-            >
-              Pro
-            </a>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold text-[12px] px-4 py-1.5"
-            >
-              Download
-            </a>
-          </nav>
+        <a
+          href="/"
+          className="flex items-center gap-2.5 group"
+          aria-label="Root News - Home"
+        >
+          <img
+            src="/root-logo.png"
+            alt=""
+            className="w-7 h-7 transition-transform group-hover:scale-105"
+          />
+          <span className="font-serif text-[19px] text-white tracking-[-0.01em] leading-none">
+            Root News
+          </span>
+        </a>
 
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden text-white/50 p-2"
-            aria-label="Toggle menu"
-          >
-            {open ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
-          </button>
-        </div>
+        <a
+          href={APP_STORE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute right-3 sm:right-6 btn-gold text-[11px] px-3.5 py-1.5"
+        >
+          Download
+        </a>
       </div>
-
-      {open && (
-        <div className="md:hidden bg-[#0B0B15]/95 backdrop-blur-xl border-b border-white/[0.04]">
-          <div className="px-4 py-4 space-y-3">
-            <a
-              href="#features"
-              onClick={() => setOpen(false)}
-              className="block text-[13px] text-white/30 hover:text-white/70 transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#pro"
-              onClick={() => setOpen(false)}
-              className="block text-[13px] text-white/30 hover:text-white/70 transition-colors"
-            >
-              Pro
-            </a>
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold text-[12px] px-4 py-1.5 inline-block"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-      )}
     </header>
   )
 }
