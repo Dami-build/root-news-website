@@ -23,24 +23,21 @@ export default function Header() {
           : 'bg-transparent border-b border-transparent'
       }`}
     >
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-center">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-center">
         <span className="hidden sm:block absolute left-4 sm:left-6 text-[10px] uppercase tracking-[0.25em] text-white/20">
           Est. 2025
         </span>
 
         <a
           href="/"
-          className="flex items-center gap-2.5 group"
+          className="group inline-flex items-center"
           aria-label="Root News - Home"
         >
           <img
             src="/root-logo.png"
-            alt=""
-            className="w-7 h-7 transition-transform group-hover:scale-105"
+            alt="Root News"
+            className="w-12 h-12 sm:w-14 sm:h-14 transition-transform group-hover:scale-105"
           />
-          <span className="font-serif text-[19px] text-white tracking-[-0.01em] leading-none">
-            Root News
-          </span>
         </a>
 
         <a
