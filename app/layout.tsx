@@ -5,14 +5,18 @@ import './globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
+  display: 'swap',
   variable: '--font-inter',
+  preload: true,
 })
 
 const instrumentSerif = Instrument_Serif({
   subsets: ['latin'],
   weight: '400',
   style: ['normal', 'italic'],
+  display: 'swap',
   variable: '--font-serif',
+  preload: true,
 })
 
 export const metadata: Metadata = {

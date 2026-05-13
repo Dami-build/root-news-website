@@ -86,10 +86,39 @@
     }
   }
 
-  /* Drop the always-on float on small screens to save GPU. */
-  @media (max-width: 640px) {
-    .card-float {
-      animation: none;
+  /* Mobile: skip ALL entrance animations and infinite loops.
+     They were getting throttled during React hydration, leaving
+     elements stuck invisible for many seconds. Instant > polish. */
+  @media (max-width: 768px) {
+    .fade-in,
+    .fade-in-d1,
+    .fade-in-d2,
+    .fade-in-d3,
+    .fade-in-d4,
+    .fade-in-up,
+    .fade-in-up-delay-1,
+    .fade-in-up-delay-2,
+    .fade-in-up-delay-3,
+    .bullet-reveal > * {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+
+    .js [data-animate] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .card-float,
+    .shimmer {
+      animation: none !important;
+    }
+
+    .live-dot::after {
+      animation: none !important;
+      opacity: 0 !important;
     }
   }
 

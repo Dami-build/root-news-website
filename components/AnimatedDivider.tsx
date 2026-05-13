@@ -28,7 +28,7 @@ export default function ScrollAnimator() {
 
     const fallback = window.setTimeout(() => {
       elements.forEach((el) => el.classList.add('visible'))
-    }, 3000)
+    }, 1200)
 
     return () => {
       observer.disconnect()
