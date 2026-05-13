@@ -16,9 +16,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Root News - The News, Simplified',
-  description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
-  keywords: 'AI news, news aggregation, news summaries, artificial intelligence, daily news, news app, Root News, daily briefing, audio news',
+  title: 'Root News - The intelligence layer for modern news',
+  description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
+  keywords: 'news intelligence, news synthesis, signal vs noise, news context, news clarity, Root News, daily briefing, news app',
   authors: [{ name: 'Root Labs OÜ' }],
   creator: 'Root News',
   publisher: 'Root Labs OÜ',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Root News - The News, Simplified',
-    description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Ask AI about any article. Daily audio briefings. Free on iOS.',
+    title: 'Root News - The intelligence layer for modern news',
+    description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
     url: 'https://www.rootnews.app',
     siteName: 'Root News',
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Root News - The News, Simplified',
+        alt: 'Root News - The intelligence layer for modern news',
       },
     ],
     locale: 'en_US',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Root News - The News, Simplified',
-    description: 'AI-powered news summaries from trusted sources. 10+ categories updated every 3 hours. Free on iOS.',
+    title: 'Root News - The intelligence layer for modern news',
+    description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
     images: ['/og-image.jpg'],
   },
   robots: {

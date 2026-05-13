@@ -1,26 +1,26 @@
-import { Globe2, Sparkles, CheckCircle2 } from 'lucide-react'
+import { Activity, Layers, Sparkles } from 'lucide-react'
 
 const steps = [
   {
     num: '01',
-    Icon: Globe2,
-    title: 'Scan',
+    Icon: Activity,
+    title: 'Monitor',
     description:
-      'Thousands of articles from hundreds of global sources, continuously monitored.',
+      'Continuous monitoring of thousands of articles across hundreds of global sources.',
   },
   {
     num: '02',
-    Icon: Sparkles,
-    title: 'Filter',
+    Icon: Layers,
+    title: 'Synthesize',
     description:
-      'AI scores stories by importance, strips the noise, and identifies what actually matters.',
+      'Each story is parsed, scored for significance, and reduced to its core signal.',
   },
   {
     num: '03',
-    Icon: CheckCircle2,
-    title: 'Distill',
+    Icon: Sparkles,
+    title: 'Surface',
     description:
-      'Clear, scannable, unbiased summaries - ready for you in seconds.',
+      'Only what matters reaches you - clear, structured, and ready to read.',
   },
 ]
 
@@ -29,15 +29,15 @@ export default function Features() {
     <section id="features" className="py-28 px-4 sm:px-6 relative">
       <div className="max-w-5xl mx-auto">
         <div className="mb-16 text-center" data-animate>
-          <p className="text-[11px] uppercase tracking-[0.25em] text-white/30 mb-3">
-            How Root works
+          <p className="text-[11px] uppercase tracking-[0.25em] text-white/30 mb-3 font-mono">
+            Continuous synthesis
           </p>
           <h2 className="text-2xl sm:text-3xl font-medium text-white tracking-[-0.02em] max-w-xl mx-auto leading-tight">
-            A newsroom working for{' '}
+            An{' '}
             <span className="font-serif italic text-[#DAA520] font-normal">
-              you
+              intelligence
             </span>{' '}
-            24/7
+            engine for the news cycle
           </h2>
         </div>
 
@@ -47,7 +47,7 @@ export default function Features() {
               className="h-full"
               style={{
                 background:
-                  'linear-gradient(90deg, transparent, rgba(218,165,32,0.3) 20%, rgba(218,165,32,0.3) 80%, transparent)',
+                  'linear-gradient(90deg, transparent, rgba(218,165,32,0.25) 20%, rgba(218,165,32,0.25) 80%, transparent)',
               }}
             />
           </div>
@@ -66,7 +66,7 @@ export default function Features() {
                     <div className="absolute inset-0 rounded-full bg-[#0B0B15] border border-[#B8860B]/20" />
                     <div
                       className="absolute inset-0 rounded-full blur-md"
-                      style={{ background: 'rgba(184, 134, 11, 0.15)' }}
+                      style={{ background: 'rgba(184, 134, 11, 0.12)' }}
                     />
                     <div className="relative w-14 h-14 rounded-full bg-[#14141F] border border-white/[0.06] flex items-center justify-center">
                       <Icon className="w-5 h-5 text-[#DAA520]" />

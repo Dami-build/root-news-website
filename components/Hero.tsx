@@ -11,16 +11,8 @@ export default function Hero() {
         aria-hidden="true"
       >
         <div
-          className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full blur-[160px]"
-          style={{ background: 'rgba(184, 134, 11, 0.08)' }}
-        />
-        <div
-          className="absolute top-[5%] right-[10%] w-[400px] h-[400px] rounded-full blur-[140px]"
-          style={{ background: 'rgba(91, 110, 245, 0.06)' }}
-        />
-        <div
-          className="absolute top-[30%] left-[5%] w-[400px] h-[400px] rounded-full blur-[140px]"
-          style={{ background: 'rgba(41, 217, 165, 0.04)' }}
+          className="absolute top-[28%] left-1/2 -translate-x-1/2 w-[850px] h-[450px] rounded-full blur-[170px]"
+          style={{ background: 'rgba(184, 134, 11, 0.06)' }}
         />
       </div>
 
@@ -29,35 +21,29 @@ export default function Hero() {
           href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.08] bg-white/[0.03] text-[11px] text-white/60 hover:bg-white/[0.05] transition-colors fade-in"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.07] bg-white/[0.025] text-[11px] text-white/55 hover:bg-white/[0.04] hover:border-white/[0.12] transition-colors fade-in"
         >
-          <span className="flex items-center gap-0.5">
-            {[0, 1, 2, 3, 4].map((i) => (
-              <Star
-                key={i}
-                className="w-2.5 h-2.5 fill-[#DAA520] text-[#DAA520]"
-              />
-            ))}
-          </span>
-          <span className="text-white/70 font-medium">4.8</span>
-          <span className="text-white/30">&middot;</span>
-          <span>Featured on the App Store</span>
+          <Star className="w-2.5 h-2.5 fill-[#DAA520] text-[#DAA520]" />
+          <span className="text-white/75 font-medium">4.8</span>
+          <span className="text-white/20">/</span>
+          <span>App Store</span>
+          <span className="text-white/20">/</span>
+          <span className="font-mono text-white/45">iOS</span>
         </a>
 
         <h1 className="mt-8 text-[2.5rem] sm:text-5xl lg:text-[4rem] font-medium text-white leading-[1.02] tracking-[-0.035em] fade-in-d1">
-          The fastest way
-          <br />
-          to{' '}
+          The{' '}
           <span className="font-serif italic font-normal text-[#DAA520] tracking-[-0.02em]">
-            understand
+            intelligence
           </span>{' '}
-          the news
+          layer
+          <br className="hidden sm:block" />{' '}
+          for modern news
         </h1>
 
         <p className="mt-6 text-[15px] sm:text-base text-white/50 max-w-xl mx-auto leading-relaxed fade-in-d2">
-          Root scans thousands of articles in real-time from hundreds of sources.
-          AI filters the noise, identifies what actually matters, and delivers
-          it as clear, unbiased summaries - in seconds.
+          A continuous, real-time read on the global news cycle. Built for
+          signal, context, and clarity.
         </p>
 
         <div className="mt-10 fade-in-d3">
@@ -82,20 +68,26 @@ export default function Hero() {
             aria-hidden="true"
             style={{
               background:
-                'radial-gradient(ellipse at center, rgba(184,134,11,0.12), transparent 60%)',
+                'radial-gradient(ellipse at center, rgba(184,134,11,0.10), transparent 60%)',
             }}
           />
           <div className="relative card-float rounded-2xl border border-white/[0.08] bg-[#14141F]/90 backdrop-blur-xl p-6 sm:p-7 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.8),inset_0_1px_0_rgba(255,255,255,0.05)]">
-            <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center justify-between mb-5 pb-4 border-b border-white/[0.04]">
               <div className="flex items-center gap-2">
                 <span className="relative inline-flex">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 live-dot text-emerald-400" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/80 live-dot text-emerald-400/60" />
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.2em] text-white/40">
                   World
                 </span>
+                <span className="text-white/15">/</span>
+                <span className="text-[10px] uppercase tracking-[0.2em] text-white/30">
+                  Markets
+                </span>
               </div>
-              <span className="text-[10px] text-white/25">2 min read</span>
+              <span className="text-[10px] font-mono text-white/30">
+                09:42 UTC
+              </span>
             </div>
 
             <h2 className="font-serif text-[22px] sm:text-2xl leading-[1.2] text-white tracking-[-0.01em] mb-5">

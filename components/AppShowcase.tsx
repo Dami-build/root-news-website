@@ -13,9 +13,9 @@ const freeFeatures = [
 
 const proFeatures = [
   'Everything in Free',
-  'Daily audio briefings',
   'Personalized morning brief',
-  'Four deep dive presets',
+  'Daily audio briefings',
+  'Four deep dive lenses',
   'Priority features',
 ]
 
@@ -24,7 +24,7 @@ export default function AppShowcase() {
     <section id="pro" className="py-28 px-4 sm:px-6 relative">
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-14" data-animate>
-          <p className="text-[11px] uppercase tracking-[0.25em] text-white/30 mb-3">
+          <p className="text-[11px] uppercase tracking-[0.25em] text-white/30 mb-3 font-mono">
             Pricing
           </p>
           <h2 className="text-2xl sm:text-3xl font-medium text-white tracking-[-0.02em]">
