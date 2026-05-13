@@ -575,17 +575,19 @@ export default function Home() {
             style={{ background: 'rgba(184, 134, 11, 0.08)' }}
           />
           <div className="relative z-10 max-w-2xl mx-auto" data-animate>
+            <p className="text-[11px] uppercase tracking-[0.3em] text-[#DAA520]/70 mb-5 font-mono font-semibold">
+              Signal &middot; over &middot; noise
+            </p>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-[3.25rem] text-white tracking-[-0.02em] leading-[1.1] mb-6">
-              The clearest read on the news cycle.
-              <br />
+              Start{' '}
               <em className="text-[#DAA520] not-italic font-serif italic">
-                Five minutes a day
-              </em>
-              .
+                understanding
+              </em>{' '}
+              what matters.
             </h2>
             <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
-              Free to download. No account required. Pro available when
-              you&apos;re ready.
+              Personalized signals, AI insights, and deep context — free on
+              iOS. No account required. Pro available when you&apos;re ready.
             </p>
             <a
               href={APP_STORE_URL}
