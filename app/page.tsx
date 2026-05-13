@@ -507,23 +507,21 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="flex justify-center sm:justify-end">
-                    <div className="relative w-full max-w-[200px] sm:max-w-[210px]">
+                    <div className="relative w-full max-w-[220px] sm:max-w-[230px]">
                       <div
-                        className="absolute -inset-6 blur-2xl pointer-events-none"
+                        className="absolute -inset-8 blur-3xl pointer-events-none"
                         aria-hidden="true"
                         style={{
                           background:
-                            'radial-gradient(ellipse at center, rgba(184,134,11,0.14), transparent 65%)',
+                            'radial-gradient(ellipse at center, rgba(184,134,11,0.16), transparent 65%)',
                         }}
                       />
-                      <div className="relative rounded-[1.75rem] overflow-hidden border border-white/[0.08] shadow-[0_24px_60px_-20px_rgba(0,0,0,0.85),inset_0_1px_0_rgba(255,255,255,0.05)] bg-[#0E0E1A]">
-                        <img
-                          src="/expand-feature.svg"
-                          alt="Root News deep dive expanded view"
-                          className="w-full h-auto block"
-                          loading="lazy"
-                        />
-                      </div>
+                      <img
+                        src="/expand-feature.svg"
+                        alt="Root News deep dive expanded view"
+                        className="relative w-full h-auto block drop-shadow-[0_24px_40px_rgba(0,0,0,0.55)]"
+                        loading="lazy"
+                      />
                     </div>
                   </div>
                 </div>

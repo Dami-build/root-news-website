@@ -16,9 +16,9 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'Root News - The intelligence layer for modern news',
-  description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
-  keywords: 'news intelligence, news synthesis, signal vs noise, news context, news clarity, Root News, daily briefing, news app',
+  title: 'Root News - Modern News Intelligence',
+  description: 'Personalized signals, AI insights, and deep context across world news, business, AI, science, and more.',
+  keywords: 'news intelligence, personalized news, AI news insights, news context, world news, business news, AI news, science news, Root News, daily briefing, news app',
   authors: [{ name: 'Root Labs OÜ' }],
   creator: 'Root News',
   publisher: 'Root Labs OÜ',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Root News - The intelligence layer for modern news',
-    description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
+    title: 'Root News - Modern News Intelligence',
+    description: 'Personalized signals, AI insights, and deep context across world news, business, AI, science, and more.',
     url: 'https://www.rootnews.app',
     siteName: 'Root News',
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Root News - The intelligence layer for modern news',
+        alt: 'Root News - Modern News Intelligence',
       },
     ],
     locale: 'en_US',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Root News - The intelligence layer for modern news',
-    description: 'A continuous, real-time read on the global news cycle. Built for signal, context, and clarity. Free on iOS.',
+    title: 'Root News - Modern News Intelligence',
+    description: 'Personalized signals, AI insights, and deep context across world news, business, AI, science, and more.',
     images: ['/og-image.jpg'],
   },
   robots: {

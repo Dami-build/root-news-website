@@ -21,14 +21,24 @@ export default function Hero() {
           href={APP_STORE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/[0.07] bg-white/[0.025] text-[11px] text-white/55 hover:bg-white/[0.04] hover:border-white/[0.12] transition-colors fade-in"
+          className="inline-flex items-center gap-2.5 pl-2 pr-3.5 py-1.5 rounded-full border border-[#DAA520]/20 bg-[#DAA520]/[0.04] text-[11px] hover:border-[#DAA520]/35 hover:bg-[#DAA520]/[0.06] transition-colors fade-in"
         >
-          <Star className="w-2.5 h-2.5 fill-[#DAA520] text-[#DAA520]" />
-          <span className="text-white/75 font-medium">4.8</span>
-          <span className="text-white/20">/</span>
-          <span>App Store</span>
-          <span className="text-white/20">/</span>
-          <span className="font-mono text-white/45">iOS</span>
+          <span className="flex items-center gap-[1px]">
+            {[0, 1, 2, 3, 4].map((i) => (
+              <Star
+                key={i}
+                className="w-2.5 h-2.5 fill-[#DAA520] text-[#DAA520]"
+              />
+            ))}
+          </span>
+          <span className="text-white/90 font-semibold tracking-tight">
+            4.9
+          </span>
+          <span className="text-white/15">·</span>
+          <span className="text-white/55">
+            Join <span className="text-white/80 font-medium">4,500+</span>{' '}
+            informed readers
+          </span>
         </a>
 
         <h1 className="mt-8 text-[2.5rem] sm:text-5xl lg:text-[4rem] font-medium text-white leading-[1.02] tracking-[-0.035em] fade-in-d1">
