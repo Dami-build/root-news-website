@@ -98,8 +98,12 @@
       -webkit-backdrop-filter: none !important;
     }
 
+    /* Decorative blur-glow elements look like hard gold rectangles
+       once the blur is dropped, so hide them entirely on mobile.
+       Every blur-* (non-backdrop) element in the codebase is an
+       empty decorative div with no content. */
     [class*="blur-"]:not([class*="backdrop"]) {
-      filter: none !important;
+      display: none !important;
     }
 
     .fade-in,
