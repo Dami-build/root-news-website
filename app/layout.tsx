@@ -87,7 +87,14 @@ export default function RootLayout({
       lang="en"
       className={`scroll-smooth ${inter.variable} ${instrumentSerif.variable}`}
     >
-      <head />
+      <head>
+        <meta name="theme-color" content="#0B0B15" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.classList.add('js')`,
+          }}
+        />
+      </head>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

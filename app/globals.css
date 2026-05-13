@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    background-color: #0B0B15;
+    color-scheme: dark;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -53,16 +59,38 @@
     border-color: rgba(255, 255, 255, 0.16);
   }
 
+  /* Default: visible. Only hide & animate when JS confirms it can run. */
   [data-animate] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .js [data-animate] {
     opacity: 0;
     transform: translateY(16px);
     transition: opacity 0.7s cubic-bezier(0.25, 0.1, 0.25, 1),
                 transform 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
-  [data-animate].visible {
+  .js [data-animate].visible {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  /* Reduce motion + low-end mobile: skip animations entirely */
+  @media (prefers-reduced-motion: reduce) {
+    .js [data-animate] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Drop the always-on float on small screens to save GPU. */
+  @media (max-width: 640px) {
+    .card-float {
+      animation: none;
+    }
   }
 
   [data-animate-delay="1"] { transition-delay: 0.08s; }

@@ -7,11 +7,17 @@ export default function ScrollAnimator() {
     const elements = document.querySelectorAll('[data-animate]')
     if (!elements.length) return
 
+    if (typeof IntersectionObserver === 'undefined') {
+      elements.forEach((el) => el.classList.add('visible'))
+      return
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible')
+            observer.unobserve(entry.target)
           }
         })
       },
@@ -20,7 +26,14 @@ export default function ScrollAnimator() {
 
     elements.forEach((el) => observer.observe(el))
 
-    return () => observer.disconnect()
+    const fallback = window.setTimeout(() => {
+      elements.forEach((el) => el.classList.add('visible'))
+    }, 3000)
+
+    return () => {
+      observer.disconnect()
+      window.clearTimeout(fallback)
+    }
   }, [])
 
   return null
