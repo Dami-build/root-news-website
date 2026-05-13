@@ -479,49 +479,42 @@ export default function Home() {
                   className="absolute -top-20 -right-20 w-64 h-64 rounded-full blur-[80px] pointer-events-none"
                   style={{ background: 'rgba(184, 134, 11, 0.09)' }}
                 />
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                  <div>
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-[#DAA520]/70 mb-3 font-mono">
-                      Reading experience
-                    </p>
-                    <h3 className="font-serif text-2xl text-white leading-tight mb-3 tracking-[-0.01em]">
-                      Designed to be read
-                    </h3>
-                    <p className="text-[13px] text-white/55 leading-relaxed mb-5">
-                      Editorial typography. Inline context. Structured deep
-                      dives. Every detail tuned for clarity and pace.
-                    </p>
-                    <ul className="space-y-2 text-[12px] text-white/50">
-                      <li className="flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-[#DAA520]/70 flex-shrink-0" />
-                        Editorial typography for fast comprehension
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-[#DAA520]/70 flex-shrink-0" />
-                        Tap any term for inline context
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-[#DAA520]/70 flex-shrink-0" />
-                        Expand any story for structured deep dives
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="flex justify-center sm:justify-end">
-                    <div className="relative w-full max-w-[220px] sm:max-w-[230px]">
-                      <div
-                        className="absolute -inset-8 blur-3xl pointer-events-none"
-                        aria-hidden="true"
-                        style={{
-                          background:
-                            'radial-gradient(ellipse at center, rgba(184,134,11,0.16), transparent 65%)',
-                        }}
-                      />
-                      <img
-                        src="/expand-feature.svg"
-                        alt="Root News deep dive expanded view"
-                        className="relative w-full h-auto block drop-shadow-[0_24px_40px_rgba(0,0,0,0.55)]"
-                        loading="lazy"
-                      />
+                <div className="relative">
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-[#DAA520]/70 mb-3 font-mono">
+                    Reading experience
+                  </p>
+                  <h3 className="font-serif text-2xl text-white leading-tight mb-3 tracking-[-0.01em]">
+                    Designed to be read
+                  </h3>
+                  <p className="text-[13px] text-white/55 leading-relaxed mb-7 max-w-xl">
+                    Editorial typography. Inline context. Structured deep
+                    dives. Every detail tuned for clarity and pace.
+                  </p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div className="rounded-xl border border-white/[0.05] bg-white/[0.015] p-4">
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-[#DAA520]/70 font-mono mb-2">
+                        Typography
+                      </div>
+                      <div className="font-serif text-[14px] text-white/85 leading-snug">
+                        Tuned for fast comprehension
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-white/[0.05] bg-white/[0.015] p-4">
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-[#DAA520]/70 font-mono mb-2">
+                        Context
+                      </div>
+                      <div className="font-serif text-[14px] text-white/85 leading-snug">
+                        Tap any term to learn more
+                      </div>
+                    </div>
+                    <div className="rounded-xl border border-white/[0.05] bg-white/[0.015] p-4">
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-[#DAA520]/70 font-mono mb-2">
+                        Deep dives
+                      </div>
+                      <div className="font-serif text-[14px] text-white/85 leading-snug">
+                        Structured analysis on demand
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -586,7 +579,7 @@ export default function Home() {
               what matters.
             </h2>
             <p className="text-[14px] text-white/40 mb-10 max-w-md mx-auto leading-relaxed">
-              Personalized signals, AI insights, and deep context — free on
+              Personalized signals, AI insights, and deep context - free on
               iOS. No account required. Pro available when you&apos;re ready.
             </p>
             <a

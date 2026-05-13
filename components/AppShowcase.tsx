@@ -21,7 +21,7 @@ const proFeatures = [
     desc: 'Four lenses on every story: Quick Catch-up, Why This Matters, Full Context, Both Sides.',
   },
   {
-    title: 'Daily brief — text & audio',
+    title: 'Daily brief - text & audio',
     desc: 'A morning brief in your chosen voice. Listen on the go, hands-free.',
   },
   {
@@ -137,7 +137,7 @@ export default function AppShowcase() {
                     </span>
                   </div>
                   <p className="text-[11px] text-white/40 mt-1.5">
-                    or $29.99/year — save 50%
+                    or $29.99/year - save 50%
                   </p>
                 </div>
                 <span className="text-[9px] uppercase tracking-[0.18em] text-[#DAA520] bg-[#B8860B]/[0.12] border border-[#B8860B]/30 px-2.5 py-1 rounded-full font-medium">
